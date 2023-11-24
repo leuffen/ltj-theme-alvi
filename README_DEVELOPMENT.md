@@ -30,5 +30,18 @@ kick dev
 ```
 
 
+## Structure of the Project
 
+The project is structured in the following way:
 
+```
+./_tpl       # contains the template files
+ |- _root/   # contains the scaffold files for creating a project from this theme
+ |- **/*.md  # contains the presets (markdown files)
+ 
+./showcase   # contains the showcase files
+./src        # contains the source files (both scss and js)
+./theme      # contains the combined ts files to be loaded in the project (including libraries etc)
+```
+
+Intended usage. 
