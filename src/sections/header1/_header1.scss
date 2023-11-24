@@ -1,0 +1,81 @@
+/**
+ * Komponente: header
+ */
+
+.tjs-header1 {
+    background: transparent linear-gradient(118deg, #E8F6FF 0%, #ECF2DC 100%) 0% 0% no-repeat padding-box;
+    padding: 15px 0;
+    border-bottom: 1px solid #e5e5e5;
+    padding-top: var(--t-hero-top-space, 0px);
+    min-height: calc(100vh - 110px);
+    display: flex;
+    align-items: center;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    &__hero {
+
+        &--row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        &--col {
+            flex-basis: 50%;
+
+            &-text {
+                text-align: left;
+            }
+
+            &-image {
+                display: block;
+            }
+        }
+    }
+
+    &.decreased-height {
+        padding-bottom: 50px;
+        min-height: unset;
+    }
+
+    :not(:has(img)) {
+        .tjs-header1 {
+            &__hero {
+                margin-bottom: 2rem;
+                margin-top: -2rem;
+            }
+
+            &__hero--row {
+                display: block;
+            }
+
+            &__hero--col-text {
+                text-align: center;
+            }
+        }
+    }
+
+    &.mobile {
+        .tjs-header1 {
+
+
+            &__hero {
+                &--col {
+                    flex-basis: 100%;
+
+                    &-text {
+                        text-align: center;
+                    }
+
+                    &-image {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

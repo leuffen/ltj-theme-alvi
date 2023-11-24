@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box; // Ensures consistent box model
+    margin: 0; // Removes default margins
+    padding: 0; // Removes default paddings
+    border: 0; // Removes default borders
+}
+
+html {
+    font-size: 100%; // Sets base font-size for rem units
+    line-height: 1.5; // Sets a default line-height
+    -webkit-text-size-adjust: 100%; // Prevents font scaling in landscape while allowing the user to zoom
+
+}
+
+body {
+    font-family: Arial, sans-serif; // Sets a default font family
+    background: white; // Sets a default background color
+    color: black; // Sets a default text color
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit; // Prevents browsers from applying their own font-size
+    font-weight: normal; // Removes bold styling from headings
+}
+
+p, ul, ol, dl, dt, dd {
+    margin: 0; // Removes default margins
+}
+
+ul, ol {
+    list-style: none; // Removes default list styling
+}
+
+a {
+    color: inherit; // Inherits color from parent
+    text-decoration: none; // Removes underline
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit; // Ensures inputs use the same font
+    font-size: 100%; // Prevents IE from enlarging text in forms
+    line-height: 1.15; // Fixes an issue with certain form elements in iOS
+    margin: 0; // Removes default margin
+}
+
+button,
+input {
+    overflow: visible; // Fixes an overflow issue in IE
+}
+
+button,
+select {
+    text-transform: none; // Fixes an issue with button and select text in Firefox
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button; // Corrects inability to style clickable types in iOS
+}
+
+fieldset {
+    padding: 0; // Removes default padding
+    border: 0; // Removes default border
+}
+
+img {
+    vertical-align: middle; // Aligns images correctly inline
+    max-width: 100%; // Ensures images are responsive
+}
+
+table {
+    border-collapse: collapse; // Collapses table borders
+    border-spacing: 0; // Removes default spacing
+}

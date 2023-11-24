@@ -1,0 +1,122 @@
+@use "sass:math";
+
+.d-none {
+    display: none !important;
+}
+
+.d-block {
+    display: block !important;
+}
+
+// Padding and Margin Utilities
+// Assuming a scale where 1 = 0.25rem, 2 = 0.5rem, etc.
+@for $i from 0 through 5 {
+    .p-#{$i} {
+        padding: $i * 0.25rem !important;
+    }
+
+    .m-#{$i} {
+        margin: $i * 0.25rem !important;
+    }
+
+    .pt-#{$i},
+    .py-#{$i} {
+        padding-top: $i * 0.25rem !important;
+    }
+
+    .pr-#{$i},
+    .px-#{$i} {
+        padding-right: $i * 0.25rem !important;
+    }
+
+    .pb-#{$i},
+    .py-#{$i} {
+        padding-bottom: $i * 0.25rem !important;
+    }
+
+    .pl-#{$i},
+    .px-#{$i} {
+        padding-left: $i * 0.25rem !important;
+    }
+
+    // Repeat for margin (mt-, mr-, mb-, ml-, mx-, my-)
+}
+
+// Grid System
+// Assuming a 12 column grid
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        flex: 0 0 auto;
+        width: percentage(math.div($i, 12));
+    }
+}
+
+
+$gutter-width: 15px !default;
+.col {
+    flex: 1 0 0%; // Occupy the available space equally
+    max-width: 100%;
+    padding-right: #{$gutter-width} / 2;
+    padding-left: #{$gutter-width} / 2;
+}
+
+// Row class
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: calc(-1 * #{$gutter-width} / 2);
+    margin-left: calc(-1 * #{$gutter-width} / 2);
+
+    // Nested columns
+    > [class*="col-"] {
+        padding-right: #{$gutter-width} / 2;
+        padding-left: #{$gutter-width} / 2;
+    }
+}
+
+// Col-auto class
+.col-auto {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+}
+
+
+
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+// Margin for containers
+$container-margin: 15px !default;
+
+// Mixin for responsive container widths
+@mixin container-max-widths() {
+  @each $breakpoint, $value in $breakpoints {
+    @media (min-width: $value) {
+      max-width: $value - ($container-margin * 2);
+    }
+  }
+}
+
+.container {
+  width: 100%;
+  padding-right: $container-margin;
+  padding-left: $container-margin;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include container-max-widths();
+}
+
+.container, .container-fluid{
+    width: 100%;
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin-right: auto;
+    margin-left: auto;
+}

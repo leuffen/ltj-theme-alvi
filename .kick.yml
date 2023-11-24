@@ -1,0 +1,27 @@
+# Kickstart container config file - see https://gitub.com/infracamp/kickstart
+# Run ./kickstart.sh to start a development-container for this project
+version: 1
+from: "ghcr.io/nfra-project/kickstart-flavor-jekyll:2.1"
+ports: "80:80;4000:4000;4100:4100"
+
+command:
+
+
+  dev:
+    - killall webpack ||  echo "no job"
+    - "D:webpack serve"
+
+  init-workspaces:
+    - "mkdir -p workspaces"
+    - "git -C ./workspaces/ clone git@github.com:leuffen/jodastyle.git"
+    - "git -C ./workspaces/ clone git@github.com:leuffen/jodastyle-dev.git"
+    - "git -C ./workspaces/ clone git@github.com:kasimirjs/kasi-embed.git"
+    - "git -C ./workspaces/ clone git@github.com:kasimirjs/kasimirjs-kit-bootstrap.git"
+    - "npm install"
+
+  update:
+    - "npm update"
+    - "webpack build"
+
+  killall:
+    - killall jekyll
