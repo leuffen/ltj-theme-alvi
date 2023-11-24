@@ -1,5 +1,7 @@
 @use "sass:math";
 
+@import "defaults";
+
 .d-none {
     display: none !important;
 }
@@ -83,16 +85,8 @@ $gutter-width: 15px !default;
 
 
 
-$breakpoints: (
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px
-);
 
-// Margin for containers
-$container-margin: 15px !default;
+
 
 // Mixin for responsive container widths
 @mixin container-max-widths() {

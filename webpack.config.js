@@ -5,8 +5,8 @@ module.exports = {
     entry: {
 
 
-        'showcase/joda-dev': './showcase/joda-dev.ts',
-        'showcase/index': './showcase/index.ts'
+        'showcase/dist/joda-dev': './showcase/joda-dev.ts',
+        'showcase/dist/index': './showcase/index.ts'
     },
     cache: true,
     module: {
@@ -62,6 +62,6 @@ module.exports = {
 
     output: {
         filename: '[name].js',
-        path: path.resolve(__dirname, 'docs/'),
+        path: path.resolve(__dirname, './'),
     },
 };

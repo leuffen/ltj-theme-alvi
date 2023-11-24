@@ -1,0 +1,78 @@
+@use "sass:math";
+
+@import "defaults";
+
+// Headings
+@for $i from 1 through 6 {
+    h#{$i} {
+        font-weight: $headings-font-weight;
+        line-height: $line-height-base;
+    }
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+
+
+// Body Text
+body {
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    font-weight: $body-font-weight;
+    line-height: $line-height-base;
+}
+
+// Additional Typography
+.small {
+    font-size: $font-size-sm;
+}
+
+.lead {
+    font-size: $font-size-lg;
+    font-weight: 300;
+}
+
+.mark, mark {
+    background-color: #fcf8e3;
+}
+
+// Lists
+ul, ol {
+    padding-left: 2rem;
+}
+
+// Blockquotes
+blockquote {
+    padding: 0.5rem 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    border-left: 0.25rem solid #eee;
+}
+
+// Others
+b, strong {
+    font-weight: bold;
+}
+
+i, em {
+    font-style: italic;
+}
+
+
+
+// Mixin for responsive typography
+@mixin responsive-typography {
+    @each $breakpoint, $bp-value in $breakpoints {
+        @media (min-width: $bp-value) {
+            // Convert pixels to rems
+            $font-size-increment: math.div($bp-value, $base-font-size-px * 100); // Scaling factor
+            $new-font-size: $font-size-base + $font-size-increment;
+            font-size: math.clamp($font-size-base, $new-font-size, 2rem); // Adjust min and max values as needed
+        }
+    }
+}

@@ -1,0 +1,23 @@
+$font-family-base: 'Nunito', sans-serif; // Bootstrap uses system font stack
+$font-size-base: 1rem; // Typically 16px
+$line-height-base: 1.5;
+$headings-font-weight: 500;
+$body-font-weight: 400;
+$font-size-lg: 1.25rem; // Larger text
+$font-size-sm: 0.875rem; // Smaller text
+
+// Base font size
+$font-size-base: 1rem; // 16px
+$base-font-size-px: 16; // Base font size in pixels
+
+
+// Margin for containers
+$container-margin: 15px !default;
+
+$breakpoints: (
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+);
