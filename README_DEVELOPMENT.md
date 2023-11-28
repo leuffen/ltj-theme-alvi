@@ -28,7 +28,7 @@ within the container run
 npm update
 kick dev
 ```
-
+**Remember to run `npm update` after cloning workspaces!**
 
 ## Structure of the Project
 

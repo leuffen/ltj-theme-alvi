@@ -19,4 +19,9 @@ Joda.registerTemplate("header1",
             </div>
         </section>
 
-    `);
+    `, {
+        cols: 0
+
+    }, {
+
+    });
