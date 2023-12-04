@@ -1,5 +1,5 @@
 
-$primary: #41C7A8 !default;
+$primary: #0db2b3 !default;
 $soft-primary: #E6F7F5 !default;
 
 $secondary: #FF5C00 !default;
@@ -25,3 +25,8 @@ $font-size-h6: 1rem !default;
 
 $font-size-p: 1rem !default;
 
+:root {
+    --alvi-primary: #{$primary};
+    --alvi-white: #{$white};
+    --alvi-font-main: #{$font-main-color};
+}

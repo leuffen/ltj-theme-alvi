@@ -1,0 +1,4 @@
+body {
+    // TODO: Find out where/why bootstrap sets a body color after this and remove need for !important
+    color: var(--alvi-font-main) !important;
+}
