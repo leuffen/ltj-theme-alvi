@@ -12,6 +12,7 @@ $font-main-color: #363636 !default;
 $element-border-color: #EDEDED !default;
 $col-background: #263238 !default;
 $slider-button-color: #454545 !default;
+$divider: #e7e8ec !default;
 
 $font-size-base: 1rem !default;
 $font-size-lg: 1.25rem !default;
@@ -29,4 +30,5 @@ $font-size-p: 1rem !default;
     --alvi-primary: #{$primary};
     --alvi-white: #{$white};
     --alvi-font-main: #{$font-main-color};
+    --alvi-divider: #{$divider};
 }

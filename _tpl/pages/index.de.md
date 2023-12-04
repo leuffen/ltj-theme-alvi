@@ -13,34 +13,19 @@ Wir helfen Ihnen weiter:
 [Alle Leistungen ansehen](/#leistungen)
 
 
+<!-- TODO: How to use hr here? If I do not use a heading, the content moves into the header section above -->
+## ribbons
+{: layout="use: #ribbons"}
 
-## Sektion 1
-{: layout="use: #riboon1; cols: 2"}
+### News
 
-Text [Link](https://www.google.com) Text ![Image]()
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.
 
-> Blockquote
+### Headline
 
-### Sektion 1.1
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.
 
-Text dieser Sektion
+### Zertifikate
 
-### Sektion 1.2
-
-### Sektion 1.3
-
-
-## Sektion 2
-
-Text dieser Sektion
-
-### Sektion 2.1
-
-Text dieser Sektion
-
-### Sektion 2.2
-
-
----
-{: layout="use: #footer1" .section-h2}
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.
 
