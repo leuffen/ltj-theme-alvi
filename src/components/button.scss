@@ -4,4 +4,8 @@
     font-weight: 300;
     padding: .3rem .5rem;
     text-decoration: none;
+
+    &.large {
+        padding: .5rem .8rem;
+    }
 }

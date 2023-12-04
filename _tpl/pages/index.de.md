@@ -5,8 +5,12 @@
 Wir helfen Ihnen weiter:
 [24h-Störungsdienst](tel:+123456789)
 
-# Hello World
-{: layout="use: #header1"}
+# Ihr zertifizierter Partner für individuelle ITK-Lösungen
+{: layout="use: #header"}
+   
+![Background Image with City Skyline](https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
+   
+[Alle Leistungen ansehen](/#leistungen)
 
 
 
