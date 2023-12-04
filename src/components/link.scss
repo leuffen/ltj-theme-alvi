@@ -1,0 +1,14 @@
+.alvi-link-arrow {
+    color: var(--alvi-primary);
+    text-decoration: none;
+    font-weight: 400;
+
+    &:before {
+        content: "\00BB";
+        padding-right: 4px;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
