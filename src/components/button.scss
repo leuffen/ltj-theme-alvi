@@ -1,6 +1,6 @@
 .alvi-btn {
     background-color: var(--alvi-primary);
-    color: var(--alvi-white);
+    color: var(--alvi-white) !important;
     font-weight: 300;
     padding: .3rem .5rem;
     text-decoration: none;
@@ -19,12 +19,12 @@
 
         &.white {
             border-color: var(--alvi-white);
-            color: var(--alvi-white);
+            color: var(--alvi-white) !important;
         }
     }
 
     .white {
         background-color: var(--alvi-white);
-        color: var(--alvi-primary);
+        color: var(--alvi-primary) !important;
     }
 }
