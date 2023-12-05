@@ -8,4 +8,23 @@
     &.large {
         padding: .5rem .8rem;
     }
+
+    &.uppercase {
+        text-transform: uppercase;
+    }
+
+    &.outline {
+        background-color: transparent;
+        border: 1px solid var(--alvi-primary);
+
+        &.white {
+            border-color: var(--alvi-white);
+            color: var(--alvi-white);
+        }
+    }
+
+    .white {
+        background-color: var(--alvi-white);
+        color: var(--alvi-primary);
+    }
 }
