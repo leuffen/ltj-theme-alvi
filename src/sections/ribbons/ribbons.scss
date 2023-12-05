@@ -2,18 +2,28 @@
 
 @import '../../microbs/defaults';
 
+$border: 1px solid var(--alvi-divider);
+
 .tjs-ribbons {
+    border-top: $border;
+    border-bottom: $border;
+
     h2 {
         display: none;
     }
+
     .children {
         display: flex;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
 
         .section-h3 {
-            padding: 1rem 1rem 0;
+            padding: 1rem;
             scroll-snap-align: center;
+
+            p {
+                margin: 0;
+            }
 
             // TODO: How to implement responsiveness with the custom breakpoint system?
             @media (max-width: map.get($breakpoints, 'md')) {
@@ -28,7 +38,7 @@
             }
 
             &:not(:last-child) {
-                border-right: 1px solid var(--alvi-divider);
+                border-right: $border;
             }
         }
     }
