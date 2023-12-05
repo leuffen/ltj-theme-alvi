@@ -127,3 +127,10 @@ Unser [24-Stunden-Notdienst](#) hilft Ihnen jedoch auch außerhalb unserer Öffn
 - [AGB](#)
 - [Newsletter](#)
 - [Karriere](#)
+
+<!-- TODO: How to use hr here? If I do not use a heading, the content moves into the section above -->
+## postfooter
+{: layout="use: #postfooter"}
+
+<!-- TODO: How to use JS expressions here? -->
+&copy; {year} ALVI GmbH & Co. KG - Alle Rechte vorbehalten - Eine LEUFFEN.DE Website
