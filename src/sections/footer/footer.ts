@@ -13,7 +13,7 @@ Joda.registerTemplate(
     // language=HTML
     `
         <footer class="tjs-footer container">
-            <div class="row">
+            <div class=":: :md: row">
                 <div class="col-12 col-lg-3 ps-0 mb-4">
                     <slot data-select="img" data-replace></slot>
                 </div>
