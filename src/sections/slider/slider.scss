@@ -5,6 +5,10 @@
 .tjs-slider {
     position: relative;
 
+    h2 {
+        margin-bottom: 1.5rem;
+    }
+
     .tjs-slider__items {
         display: flex;
         overflow-x: auto;
