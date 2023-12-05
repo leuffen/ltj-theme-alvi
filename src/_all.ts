@@ -5,3 +5,4 @@ import "./sections/ribbons/ribbons";
 import "./sections/two-columns/two-columns";
 import "./sections/slider/slider";
 import "./sections/banner/banner";
+import "./sections/cards/cards";

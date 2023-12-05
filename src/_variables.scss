@@ -5,6 +5,9 @@ $soft-primary: #E6F7F5 !default;
 $secondary: #FF5C00 !default;
 $soft-secondary: #FFF0E6 !default;
 
+$background-grey: #f6f6f6 !default;
+$background-grey-dark: #e7e8eb !default;
+
 $black: #000 !default;
 $white: #fff !default;
 $grey: #A0A0A0 !default;
@@ -31,4 +34,6 @@ $font-size-p: 1rem !default;
     --alvi-white: #{$white};
     --alvi-font-main: #{$font-main-color};
     --alvi-divider: #{$divider};
+    --alvi-background-grey: #{$background-grey};
+    --alvi-background-grey-dark: #{$background-grey-dark};
 }

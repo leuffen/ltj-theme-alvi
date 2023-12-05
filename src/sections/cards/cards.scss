@@ -1,0 +1,35 @@
+.tjs-cards {
+    padding: 4rem 0;
+    background-color: var(--alvi-background-grey);
+}
+
+.tjs-card {
+    &:first-child {
+        .tjs-card__content {
+            border-bottom-color: var(--alvi-primary);
+        }
+    }
+
+    .tjs-card__content {
+        margin: 1rem;
+        border-bottom: 5px solid var(--alvi-background-grey-dark);
+
+        img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+
+        .tjs-card__content__text {
+            padding: 1rem;
+            background-color: var(--alvi-white);
+
+            h3 {
+                text-transform: none;
+                font-weight: 600;
+                font-size: 1.4rem !important;
+            }
+        }
+    }
+}
