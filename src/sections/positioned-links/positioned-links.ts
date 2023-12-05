@@ -9,7 +9,7 @@ Joda.registerTemplate(
                 <div class="row">
                     <div class="col-12 col-md-6">
                         <slot data-replace></slot>
-                        <slot data-select="p a" data-replace data-child-class="alvi-btn outline grey uppercase mt-4"></slot>
+                        <slot data-select="p a" data-replace data-child-class="alvi-btn outline grey large uppercase d-inline-flex mt-4"></slot>
                     </div>
                     <div class="col-12 col-md-6 mt-5 mt-md-0">
                         <div class="tjs-positioned-links__image-container">

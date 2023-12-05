@@ -4,7 +4,7 @@ Joda.registerTemplate(
     "two-columns",
     // language=HTML
     `
-        <section class="tjs-two-columns container py-5">
+        <section class="tjs-two-columns container">
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-7">
                     <slot data-replace></slot>
