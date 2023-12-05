@@ -1,0 +1,15 @@
+.tjs-postfooter {
+    padding: 2rem 0;
+    background-color: var(--alvi-background-grey);
+
+    font-weight: var(--alvi-font-weight-footer);
+    font-size: var(--alvi-font-size-footer);
+
+    h2 {
+        display: none;
+    }
+
+    p {
+        margin: 0;
+    }
+}
