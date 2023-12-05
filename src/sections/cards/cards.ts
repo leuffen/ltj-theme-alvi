@@ -3,7 +3,7 @@ import {Joda} from "@leuffen/jodastyle";
 Joda.registerTemplate("card",
     // language=HTML
     `
-        <div class="col-12 col-md-4 tjs-card">
+        <div class="tjs-card :: col-12 :md: col-4">
             <div class="tjs-card__content">
                 <slot data-select="img"></slot>
                 <div class="tjs-card__content__text">
