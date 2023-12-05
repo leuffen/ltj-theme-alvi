@@ -1,0 +1,57 @@
+.tjs-positioned-links {
+    padding: 4rem 0;
+    background-color: var(--alvi-background-grey);
+
+    h2 {
+        color: var(--alvi-background-grey-dark);
+    }
+
+    .tjs-positioned-links__image-container {
+        position: relative;
+
+        $transition: all 150ms ease;
+
+        a {
+            $border-right-radius: 1rem;
+
+            position: absolute;
+            display: inline-flex;
+            align-items: center;
+            border-top-right-radius: $border-right-radius;
+            border-bottom-right-radius: $border-right-radius;
+            padding-left: .5rem;
+            background-color: #ffffffd6;
+            font-weight: 300;
+            color: var(--alvi-font-main) !important;
+            transition: $transition;
+
+            &:after {
+                $size: 1.8rem;
+
+                content: '+';
+                display: flex;
+                height: $size;
+                width: $size;
+                margin-left: .6rem;
+                background-color: var(--alvi-primary);
+                color: var(--alvi-white);
+                justify-content: center;
+                border-radius: 100%;
+                font-size: 1.7rem;
+                line-height: 1.3rem;
+                border: 2px solid var(--alvi-primary);
+                transition: $transition;
+            }
+
+            &:hover {
+                background-color: var(--alvi-primary);
+                color: var(--alvi-white) !important;
+                text-decoration: none !important;
+
+                &:after {
+                    border-color: var(--alvi-white);
+                }
+            }
+        }
+    }
+}

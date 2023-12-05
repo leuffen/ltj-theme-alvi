@@ -5,6 +5,10 @@
     padding: .3rem .5rem;
     text-decoration: none;
 
+    &:hover {
+        text-decoration: none !important;
+    }
+
     &.large {
         padding: .5rem .8rem;
     }
@@ -16,10 +20,16 @@
     &.outline {
         background-color: transparent;
         border: 1px solid var(--alvi-primary);
+        color: var(--alvi-primary) !important;
 
         &.white {
             border-color: var(--alvi-white);
             color: var(--alvi-white) !important;
+        }
+
+        &.grey {
+            border-color: var(--alvi-font-main);
+            color: var(--alvi-font-main) !important;
         }
     }
 
