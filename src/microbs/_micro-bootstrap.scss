@@ -89,10 +89,10 @@ $gutter-width: 15px !default;
 
 
 // Mixin for responsive container widths
-@mixin container-max-widths() {
+@mixin container-max-widths($attr: 'max-width', $delta: 0px) {
   @each $breakpoint, $value in $breakpoints {
     @media (min-width: $value) {
-      max-width: $value - ($container-margin * 2);
+      #{$attr}: calc($value - ($container-margin * 2) + $delta);
     }
   }
 }
