@@ -5,6 +5,8 @@
 .tjs-footer {
     padding: 4rem 0;
 
+
+
     font-weight: var(--alvi-font-weight-footer);
     font-size: var(--alvi-font-size-footer);
 
@@ -21,7 +23,7 @@
         margin: 0;
     }
 
-    .tjs-footer-col {
+    &__col {
         // TODO: How to implement responsiveness with the custom breakpoint system?
         @media (min-width: map.get($breakpoints, 'md')) {
             padding: 0 2rem;

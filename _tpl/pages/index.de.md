@@ -14,8 +14,9 @@ Wir helfen Ihnen weiter:
 
 
 <!-- TODO: How to use hr here? If I do not use a heading, the content moves into the header section above -->
-## ribbons
-{: layout="use: #ribbons"}
+
+---
+{: layout="use: #ribbons" .section-h2}
 
 ### News
 
@@ -38,20 +39,30 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 [Erfahren Sie mehr](#)
 
-## Brandmeldeanlagen
-{: layout="use: #positioned-links"}
+
+---
+{: layout="use: #tabbar"}
+
+
+### Brandmeldeanlagen
+{: layout="use: #positioned-links" data-section-data-tabname="Brandmeldeanlagen"}
 
 ![Illustration](https://assets.volkmann.dev/alvi/3d-building.jpg)
 
-- [Rufanlagen](?left=20%&top=10%#)
+- [Rufanlagen](?left=20%&top=10%#){: style="left:20%;top:10%;"}
 - [Brandmeldeanlagen](?left=5%&top=30%#)
 - [Notbeleuchtungssysteme](?right=5%&top=40%#)
 - [Zugriffskontrollsysteme](?left=10%&top=60%#)
 - [Videoüberwachung](?right=30%&top=75%#)
 
+
 Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren
 
 [Mehr erfahren](#)
+
+### Tab 2
+
+Inhalt Tab 2
 
 ## Aktuelle Projekte
 {: layout="use: #slider"}
