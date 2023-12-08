@@ -9,3 +9,4 @@ import "./sections/cards/cards";
 import "./sections/footer/footer";
 import "./sections/postfooter/postfooter";
 import "./sections/positioned-links/positioned-links";
+import "./sections/tabs/tabs";

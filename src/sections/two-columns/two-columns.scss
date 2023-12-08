@@ -1,4 +1,16 @@
 .tjs-two-columns {
     padding-top: 5rem;
     padding-bottom: 5rem;
+
+    background-color: var(--layout-bg);
+
+    .row {
+        &.mobile {
+            & > div {
+                &:not(:last-child) {
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
 }
