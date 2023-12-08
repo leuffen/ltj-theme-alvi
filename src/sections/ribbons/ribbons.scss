@@ -1,45 +1,38 @@
-@use "sass:map";
-
-@import '../../microbs/defaults';
-
 $border: 1px solid var(--alvi-divider);
+$padding: 1rem;
 
-.tjs-ribbons {
+.tjs-ribbon {
     border-top: $border;
-    border-bottom: $border;
+    overflow: hidden;
 
-    h2 {
-        display: none;
+    &.border-bottom {
+        border-bottom: $border;
     }
 
-    .children {
-        display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
+    &__col {
+        position: relative;
+        padding-top: $padding;
+        padding-bottom: $padding;
 
-        .section-h3 {
-            padding: 1rem;
-            scroll-snap-align: center;
-
-            p {
-                margin: 0;
-            }
-
-            // TODO: How to implement responsiveness with the custom breakpoint system?
-            @media (max-width: map.get($breakpoints, 'md')) {
-                min-width: min(100vw, 20rem);
-            }
-
-            &:nth-child(1) {
-                padding-left: 0;
-            }
-            &:last-child {
-                padding-right: 0;
-            }
-
+        &-border-x {
             &:not(:last-child) {
                 border-right: $border;
             }
+        }
+        &-content-padding-x {
+            .content {
+                padding-left: $padding;
+                padding-right: $padding;
+            }
+        }
+
+        .divider-bottom {
+            position: absolute;
+            width: 200vw;
+            height: 0;
+            left: -50vw;
+            bottom: 0;
+            border-bottom: $border;
         }
     }
 }

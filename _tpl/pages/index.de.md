@@ -12,10 +12,8 @@ Wir helfen Ihnen weiter:
    
 [Alle Leistungen ansehen](/#leistungen)
 
-
-<!-- TODO: How to use hr here? If I do not use a heading, the content moves into the header section above -->
-## ribbons
-{: layout="use: #ribbons"}
+---
+{: layout="use: #ribbons" .section-h2}
 
 ### News
 
