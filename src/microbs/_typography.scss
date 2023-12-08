@@ -1,4 +1,5 @@
 @use "sass:math";
+@use "sass:map";
 
 @import "defaults";
 
@@ -11,7 +12,12 @@
 }
 
 h1 {
-    font-size: 2.2rem !important;
+    transition: font-size 100ms ease;
+    font-size: 1.8rem !important;
+
+    @media (min-width: map.get($breakpoints, 'md')) {
+        font-size: 2.2rem !important;
+    }
 }
 
 h2,

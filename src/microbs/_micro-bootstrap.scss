@@ -18,7 +18,7 @@
     display: inline-flex !important;
 }
 
-// Padding and Margin Utilities
+// Padding, Margin, Gap Utilities
 // Assuming a scale where 1 = 0.25rem, 2 = 0.5rem, etc.
 @for $i from 0 through 5 {
     .p-#{$i} {
@@ -67,6 +67,10 @@
     .ml-#{$i},
     .mx-#{$i} {
         margin-left: $i * 0.25rem !important;
+    }
+
+    .gap-#{$i} {
+        gap: $i * 0.25rem !important;
     }
 }
 
@@ -139,6 +143,22 @@ $gutter-width: 15px !default;
     padding-left: var(--bs-gutter-x, .75rem);
     margin-right: auto;
     margin-left: auto;
+}
+
+.flex-row {
+    flex-direction: row !important;
+}
+
+.flex-column {
+    flex-direction: column !important;
+}
+
+.flex-row-reverse {
+    flex-direction: row-reverse !important;
+}
+
+.flex-column-reverse {
+    flex-direction: column-reverse !important;
 }
 
 .justify-content-start {

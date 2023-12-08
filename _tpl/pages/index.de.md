@@ -1,5 +1,5 @@
 ---
-{: layout="use: #prenav"}
+{: layout="use: #prenav" .section-h2}
 
 **Sie haben ein Problem?**
 Wir helfen Ihnen weiter:
