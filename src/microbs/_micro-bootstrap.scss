@@ -10,15 +10,19 @@
     display: block !important;
 }
 
+.d-flex {
+    display: flex !important;
+}
+
+.d-inline-flex {
+    display: inline-flex !important;
+}
+
 // Padding and Margin Utilities
 // Assuming a scale where 1 = 0.25rem, 2 = 0.5rem, etc.
 @for $i from 0 through 5 {
     .p-#{$i} {
         padding: $i * 0.25rem !important;
-    }
-
-    .m-#{$i} {
-        margin: $i * 0.25rem !important;
     }
 
     .pt-#{$i},
@@ -41,7 +45,29 @@
         padding-left: $i * 0.25rem !important;
     }
 
-    // Repeat for margin (mt-, mr-, mb-, ml-, mx-, my-)
+    .m-#{$i} {
+        margin: $i * 0.25rem !important;
+    }
+
+    .mt-#{$i},
+    .my-#{$i} {
+        margin-top: $i * 0.25rem !important;
+    }
+
+    .mr-#{$i},
+    .mx-#{$i} {
+        margin-right: $i * 0.25rem !important;
+    }
+
+    .mb-#{$i},
+    .my-#{$i} {
+        margin-bottom: $i * 0.25rem !important;
+    }
+
+    .ml-#{$i},
+    .mx-#{$i} {
+        margin-left: $i * 0.25rem !important;
+    }
 }
 
 // Grid System
@@ -71,8 +97,8 @@ $gutter-width: 15px !default;
 
     // Nested columns
     > [class*="col-"] {
-        padding-right: #{$gutter-width} / 2;
-        padding-left: #{$gutter-width} / 2;
+        padding-right: calc(#{$gutter-width} / 2);
+        padding-left: calc(#{$gutter-width} / 2);
     }
 }
 
@@ -113,4 +139,48 @@ $gutter-width: 15px !default;
     padding-left: var(--bs-gutter-x, .75rem);
     margin-right: auto;
     margin-left: auto;
+}
+
+.justify-content-start {
+    justify-content: flex-start !important;
+}
+
+.justify-content-end {
+    justify-content: flex-end !important;
+}
+
+.justify-content-center {
+    justify-content: center !important;
+}
+
+.justify-content-between {
+    justify-content: space-between !important;
+}
+
+.justify-content-around {
+    justify-content: space-around !important;
+}
+
+.justify-content-evenly {
+    justify-content: space-evenly !important;
+}
+
+.align-items-start {
+    align-items: flex-start !important;
+}
+
+.align-items-end {
+    align-items: flex-end !important;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.align-items-baseline {
+    align-items: baseline !important;
+}
+
+.align-items-stretch {
+    align-items: stretch !important;
 }
