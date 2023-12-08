@@ -36,20 +36,21 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 [Erfahren Sie mehr](#)
 
-## Brandmeldeanlagen
-{: layout="use: #positioned-links"}
+---
+{: layout="use: #positioned-links" .section-h2}
 
 ![Illustration](https://assets.volkmann.dev/alvi/3d-building.jpg)
 
-- [Rufanlagen](?left=20%&top=10%#)
-- [Brandmeldeanlagen](?left=5%&top=30%#)
-- [Notbeleuchtungssysteme](?right=5%&top=40%#)
-- [Zugriffskontrollsysteme](?left=10%&top=60%#)
-- [Videoüberwachung](?right=30%&top=75%#)
+- <a style="left: 20%; top: 10%;" href="#">Rufanlagen</a>
+- <a style="left: 5%; top: 30%;" href="#">Brandmeldeanlagen</a>
+- <a style="right: 5%; top: 40%;" href="#">Notbeleuchtungssysteme</a>
+- <a style="left: 10%; top: 60%;" href="#">Zugriffskontrollsysteme</a>
+- <a style="right: 30%; top: 75%;" href="#">Videoüberwachung</a>
 
-Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren
+[//]: # (Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren)
 
-[Mehr erfahren](#)
+[//]: # ()
+[//]: # ([Mehr erfahren]&#40;#&#41;)
 
 ## Aktuelle Projekte
 {: layout="use: #slider"}
