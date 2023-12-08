@@ -104,9 +104,8 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
 
-<!-- TODO: How to use hr here? If I do not use a heading, the content moves into the section above -->
-## footer
-{: layout="use: #footer"}
+---
+{: layout="use: #footer" .section-h2}
 
 ![Logo](https://assets.volkmann.dev/alvi/alvi.png)
 
@@ -136,9 +135,8 @@ Unser [24-Stunden-Notdienst](#) hilft Ihnen jedoch auch außerhalb unserer Öffn
 - [Newsletter](#)
 - [Karriere](#)
 
-<!-- TODO: How to use hr here? If I do not use a heading, the content moves into the section above -->
-## postfooter
-{: layout="use: #postfooter"}
+---
+{: layout="use: #postfooter" .section-h2}
 
 <!-- TODO: How to use JS expressions here? -->
 &copy; {year} ALVI GmbH & Co. KG - Alle Rechte vorbehalten - Eine LEUFFEN.DE Website
