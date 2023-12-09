@@ -12,7 +12,7 @@ Joda.registerTemplate(
                     </div>
                     <div class=":: col-12 :md: col-9">
                         <slot></slot>
-                        <slot data-select="a" data-child-class="alvi-btn outline white uppercase d-inline-flex mt-4"></slot>
+                        <slot data-select="a" data-child-class="alvi-btn draw-border outline uppercase d-inline-flex mt-4"></slot>
                     </div>
                 </div>
             </div>

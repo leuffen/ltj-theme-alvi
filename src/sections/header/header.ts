@@ -10,7 +10,7 @@ Joda.registerTemplate(
                 <div class="row">
                     <div class="tjs-header__content :: col-12 :md: col-8 :lg: col-6">
                         <slot></slot>
-                        <slot data-select="a" data-child-class="alvi-btn large d-inline-flex :: mt-1 :lg: mt-3"></slot>
+                        <slot data-select="a" data-child-class="alvi-btn draw-border large d-inline-flex :: mt-1 :lg: mt-3"></slot>
                     </div>
                 </div>
             </div>
