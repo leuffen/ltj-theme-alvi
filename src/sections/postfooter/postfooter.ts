@@ -8,7 +8,7 @@ Joda.registerTemplate(
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <slot data-replace></slot>
+                        <slot></slot>
                     </div>
                 </div>
             </div>

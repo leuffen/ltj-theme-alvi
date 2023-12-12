@@ -1,0 +1,36 @@
+.tjs-tabs {
+    &__tabs {
+        a {
+            padding: 1rem 2.5rem;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            text-transform: uppercase;
+            transition: all 150ms ease;
+            border: 1px solid var(--alvi-background-grey);
+            border-bottom-width: 0;
+            font-weight: 100;
+
+            &.active,
+            &:hover {
+                background-color: var(--alvi-background-grey);
+                color: var(--alvi-font-main) !important;
+            }
+
+            &.active {
+                font-weight: 400;
+            }
+
+            &:hover {
+                text-decoration: none !important;
+            }
+        }
+    }
+
+    .children {
+        section {
+            &:not(.active) {
+                display: none;
+            }
+        }
+    }
+}

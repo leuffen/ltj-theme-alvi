@@ -1,16 +1,9 @@
-@use "sass:map";
-
-@import '../../microbs/defaults';
-
 .tjs-footer {
-    padding: 4rem 0;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 
     font-weight: var(--alvi-font-weight-footer);
     font-size: var(--alvi-font-size-footer);
-
-    h2 {
-        display: none;
-    }
 
     img {
         max-width: 10rem;
@@ -21,9 +14,10 @@
         margin: 0;
     }
 
-    .tjs-footer-col {
-        // TODO: How to implement responsiveness with the custom breakpoint system?
-        @media (min-width: map.get($breakpoints, 'md')) {
+    &__col {
+        &-md,
+        &-lg {
+            margin-bottom: 0;
             padding: 0 2rem;
             &:first-child {
                 padding-left: 0;
@@ -34,6 +28,10 @@
             &:not(:last-child) {
                 border-right: 1px solid var(--alvi-divider);
             }
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 1.5rem;
         }
     }
 }
