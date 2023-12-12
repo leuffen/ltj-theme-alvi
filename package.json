@@ -24,7 +24,7 @@
     "author": "",
     "dependencies": {
         "@leuffen/jodastyle": "^3.0.8",
-        "@leuffen/jodastyle-dev": "^3.0.5",
+        "@leuffen/jodastyle-dev": "^3.0.6",
         "@leuffen/liscom": "^2.0.10",
         "@leuffen/liscom-loader": "^1.0.6",
         "@leuffen/liweco-base": "^2.0.2",

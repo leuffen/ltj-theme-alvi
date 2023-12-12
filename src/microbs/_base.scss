@@ -5,6 +5,5 @@ h3,
 h4,
 h5,
 h6 {
-    // TODO: Find out where/why bootstrap sets a body color after this and remove need for !important
-    color: var(--alvi-font-main) !important;
+    color: var(--alvi-font-main);
 }

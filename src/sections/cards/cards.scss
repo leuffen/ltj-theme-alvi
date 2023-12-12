@@ -10,8 +10,8 @@
         }
     }
 
-    .tjs-card__content {
-        margin: 1rem;
+    &__content {
+        margin: .5rem;
         border-bottom: 5px solid var(--alvi-background-grey-dark);
 
         img {
@@ -21,7 +21,7 @@
             object-position: top;
         }
 
-        .tjs-card__content__text {
+        &__text {
             padding: 1rem;
             background-color: var(--alvi-white);
 

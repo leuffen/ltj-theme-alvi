@@ -10,7 +10,8 @@ $background-grey-dark: #e7e8eb !default;
 
 $black: #000 !default;
 $white: #fff !default;
-$grey: #A0A0A0 !default;
+$grey: #727171 !default;
+$dark-grey: #291e1e !default;
 $font-main-color: #5b5b5b !default;
 $element-border-color: #EDEDED !default;
 $col-background: #263238 !default;
@@ -33,6 +34,8 @@ $font-weight-footer: 300 !default;
 
 :root {
     --alvi-primary: #{$primary};
+    --alvi-grey: #{$grey};
+    --alvi-dark-grey: #{$dark-grey};
     --alvi-white: #{$white};
     --alvi-font-main: #{$font-main-color};
     --alvi-divider: #{$divider};

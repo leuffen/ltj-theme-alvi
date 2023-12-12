@@ -1,5 +1,5 @@
 ---
-{: layout="use: #prenav"}
+{: layout="use: #prenav" .section-h2}
 
 **Sie haben ein Problem?**
 Wir helfen Ihnen weiter:
@@ -12,10 +12,8 @@ Wir helfen Ihnen weiter:
    
 [Alle Leistungen ansehen](/#leistungen)
 
-
-<!-- TODO: How to use hr here? If I do not use a heading, the content moves into the header section above -->
-## ribbons
-{: layout="use: #ribbons"}
+---
+{: layout="use: #ribbons" .section-h2}
 
 ### News
 
@@ -38,20 +36,59 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 [Erfahren Sie mehr](#)
 
-## Brandmeldeanlagen
-{: layout="use: #positioned-links"}
+---
+{: layout="use: #tabs" .section-h2}
 
-![Illustration](https://assets.volkmann.dev/alvi/3d-building.jpg)
+- [Tab A](#tab-content-1){data-tab .active}
+- [Tab B](#tab-content-2){data-tab}
+- [Tab C](#tab-content-3){data-tab}
 
-- [Rufanlagen](?left=20%&top=10%#)
-- [Brandmeldeanlagen](?left=5%&top=30%#)
-- [Notbeleuchtungssysteme](?right=5%&top=40%#)
-- [Zugriffskontrollsysteme](?left=10%&top=60%#)
-- [Videoüberwachung](?right=30%&top=75%#)
+### Tab Content 1
+{: layout="use: #two-columns; bg: var(--alvi-background-grey)"}
+
+---
+{#tab-content-1}
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.
+
+[Erfahren Sie mehr](#){.alvi-link-arrow .d-inline-flex .mt-4}
+
+---
+![Illustration](https://assets.volkmann.dev/alvi/alvi-illustration-1.png)
+
+### Tab Content 2
+{: layout="use: #two-columns; bg: var(--alvi-background-grey)"}
+
+---
+{#tab-content-2}
+
+Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut. Lorem ipsum dolor sit amet.
+
+[Erfahren Sie mehr](#){.alvi-link-arrow .d-inline-flex .mt-4}
+
+---
+![Illustration](https://assets.volkmann.dev/alvi/alvi-illustration-1.png)
+
+### Tab Content 3
+{: layout="use: #two-columns; bg: var(--alvi-background-grey)"}
+
+---
+{#tab-content-3}
 
 Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren
 
-[Mehr erfahren](#)
+[Mehr erfahren](#){.alvi-link-arrow .d-inline-flex .mt-4}
+
+---
+{: layout="use: #positioned-links" .tjs-positioned-links}
+
+![Illustration](https://assets.volkmann.dev/alvi/3d-building.jpg)
+
+- <a style="left: 20%; top: 10%;" href="#">Rufanlagen</a>
+- <a style="left: 5%; top: 30%;" href="#">Brandmeldeanlagen</a>
+- <a style="right: 5%; top: 40%;" href="#">Notbeleuchtungssysteme</a>
+- <a style="left: 10%; top: 60%;" href="#">Zugriffskontrollsysteme</a>
+- <a style="right: 30%; top: 75%;" href="#">Videoüberwachung</a>
 
 ## Aktuelle Projekte
 {: layout="use: #slider"}
@@ -104,9 +141,8 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
 
-<!-- TODO: How to use hr here? If I do not use a heading, the content moves into the section above -->
-## footer
-{: layout="use: #footer"}
+---
+{: layout="use: #footer" .section-h2}
 
 ![Logo](https://assets.volkmann.dev/alvi/alvi.png)
 
@@ -136,9 +172,8 @@ Unser [24-Stunden-Notdienst](#) hilft Ihnen jedoch auch außerhalb unserer Öffn
 - [Newsletter](#)
 - [Karriere](#)
 
-<!-- TODO: How to use hr here? If I do not use a heading, the content moves into the section above -->
-## postfooter
-{: layout="use: #postfooter"}
+---
+{: layout="use: #postfooter" .section-h2}
 
 <!-- TODO: How to use JS expressions here? -->
 &copy; {year} ALVI GmbH & Co. KG - Alle Rechte vorbehalten - Eine LEUFFEN.DE Website
