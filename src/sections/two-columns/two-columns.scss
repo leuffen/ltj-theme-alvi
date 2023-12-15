@@ -1,16 +1,36 @@
-.tjs-two-columns {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+.tjs__sec-card-2col {
+    padding: var(--t-section-padding);
+    background: var(--layout-bg);
 
-    background-color: var(--layout-bg);
+    &--container {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
 
-    .row {
-        &.mobile {
-            & > div {
-                &:not(:last-child) {
-                    margin-bottom: 2rem;
-                }
+    .aside {
+        --joda-class: p-4 p-lg-5;
+    }
+
+    &.mobile.text-first {
+        .row > &--col-start {
+            order: 1;
+        }
+    }
+
+    .row > &--col-start {
+        order: 99;
+    }
+
+    .row > &--col-end {
+        order: 50;
+    }
+
+    &.desktop {
+        &:nth-of-type(odd) {
+            .row {
+                flex-direction: row-reverse;
             }
         }
     }
 }
+

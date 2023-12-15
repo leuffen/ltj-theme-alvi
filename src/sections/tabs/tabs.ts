@@ -9,7 +9,6 @@ Joda.registerTemplate(
                 <div class="row">
                     <div class="col-12">
                         <div class="tjs-tabs__tabs d-flex gap-2">
-                            <slot data-select="li > a[data-tab]"></slot>
                         </div>
                     </div>
                 </div>
@@ -20,8 +19,9 @@ Joda.registerTemplate(
     {},
     {
         onAfterAllTemplatesConnectedCallback: (element: HTMLElement) => {
-            const tabs = element.querySelectorAll<HTMLAnchorElement>(".tjs-tabs__tabs a");
             const activeClass = "active";
+            const sections = element.querySelectorAll<HTMLElement>(".children > section");
+            const tabContainer = element.querySelector<HTMLDivElement>(".tjs-tabs__tabs");
 
             function deactivateTabsAndSections(): void {
                 const sections = element.querySelectorAll(".children > section");
@@ -34,9 +34,9 @@ Joda.registerTemplate(
             }
 
             function activateTabAndSection(tab: HTMLAnchorElement): void {
-                const id = tab.getAttribute('href');
+                const id = tab.getAttribute('data-tab-id');
                 const parent = tab.closest('section');
-                const tabContentIdElem = parent.querySelector(`.children ${id}`);
+                const tabContentIdElem = parent.querySelector(`.children section[data-tab-id="${id}"]`);
                 if (tabContentIdElem) {
                     const tabContentSection = tabContentIdElem.closest('section');
                     if (tabContentSection) {
@@ -50,6 +50,25 @@ Joda.registerTemplate(
                 return tab.classList.contains(activeClass);
             }
 
+            // Build Tabs
+            sections.forEach((section, i) => {
+                const tabName = section.getAttribute('data-title');
+                const tabId = tabName?.toLowerCase().replace(/ /g, '-');
+                section.setAttribute('data-tab-id', tabId);
+                if (tabName) {
+                    const tab = document.createElement('a');
+                    tab.setAttribute('href', '#');
+                    tab.setAttribute('data-tab-id', tabId);
+                    tab.innerText = tabName;
+                    if (i === 0) {
+                        tab.classList.add(activeClass);
+                    }
+                    tabContainer?.appendChild(tab);
+                }
+            });
+
+            // Add Event Listeners
+            const tabs = element.querySelectorAll<HTMLAnchorElement>(".tjs-tabs__tabs a");
             tabs.forEach(tab => {
                 if (isActive(tab)) {
                     activateTabAndSection(tab);

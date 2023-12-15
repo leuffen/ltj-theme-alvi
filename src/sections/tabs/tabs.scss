@@ -2,7 +2,7 @@
     &__tabs {
         overflow: auto;
 
-        a {
+        a[data-tab-id] {
             padding: .6rem 1.1rem;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
@@ -38,7 +38,7 @@
     }
 
     &.medium {
-        a {
+        a[data-tab-id] {
             padding: 1rem 2.5rem;
         }
     }
