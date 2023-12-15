@@ -14,7 +14,7 @@
 
     &__content {
         position: absolute;
-        bottom: 2rem;
+        bottom: 4rem;
     }
 
     &__fade {
@@ -27,6 +27,12 @@
     &.sm {
         .tjs-header__content {
             bottom: 7rem;
+        }
+    }
+
+    &.xl {
+        .tjs-header__content {
+            bottom: 9rem;
         }
     }
 }
