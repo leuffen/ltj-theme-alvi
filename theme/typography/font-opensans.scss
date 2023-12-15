@@ -1,2 +1,16 @@
-// TODO(dermatthes): Host Fonts on CDN
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+$weights: (
+    300: 'Light',
+    400: 'Regular',
+    600: 'SemiBold',
+    700: 'Bold',
+);
+
+@each $weight, $name in $weights {
+    @font-face {
+        font-family: "Open Sans";
+        src: url("https://cdn.leuffen.de/global/fonts/opensans/OpenSans-#{$name}.woff2") format("woff");
+        font-weight: $weight;
+        font-style: normal;
+        font-display: swap;
+    }
+}
