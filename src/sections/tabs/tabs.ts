@@ -4,7 +4,7 @@ Joda.registerTemplate(
     "tabs",
     // language=HTML
     `
-        <section class="tjs-tabs">
+        <section class="tjs-tabs :: :md: medium">
             <div class="container">
                 <div class="row">
                     <div class="col-12">

@@ -1,7 +1,9 @@
 .tjs-tabs {
     &__tabs {
+        overflow: auto;
+
         a {
-            padding: 1rem 2.5rem;
+            padding: .6rem 1.1rem;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
             text-transform: uppercase;
@@ -9,6 +11,7 @@
             border: 1px solid var(--alvi-background-grey);
             border-bottom-width: 0;
             font-weight: 100;
+            white-space: nowrap;
 
             &.active,
             &:hover {
@@ -31,6 +34,12 @@
             &:not(.active) {
                 display: none;
             }
+        }
+    }
+
+    &.medium {
+        a {
+            padding: 1rem 2.5rem;
         }
     }
 }
