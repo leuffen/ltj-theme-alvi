@@ -19,17 +19,17 @@ Joda.registerTemplate(
     {},
     {
         onAfterAllTemplatesConnectedCallback: (element: HTMLElement) => {
-            const activeClass = "active";
+            const activeAttribute = "data-active";
             const sections = element.querySelectorAll<HTMLElement>(".children > section");
             const tabContainer = element.querySelector<HTMLDivElement>(".tjs-tabs__tabs");
 
             function deactivateTabsAndSections(): void {
                 const sections = element.querySelectorAll(".children > section");
                 sections.forEach(child => {
-                    child.classList.remove(activeClass);
+                    child.removeAttribute(activeAttribute);
                 });
                 tabs.forEach(tab => {
-                    tab.classList.remove(activeClass);
+                    tab.removeAttribute(activeAttribute);
                 });
             }
 
@@ -40,14 +40,14 @@ Joda.registerTemplate(
                 if (tabContentIdElem) {
                     const tabContentSection = tabContentIdElem.closest('section');
                     if (tabContentSection) {
-                        tabContentSection.classList.add(activeClass);
-                        tab.classList.add(activeClass);
+                        tabContentSection.setAttribute(activeAttribute, 'true');
+                        tab.setAttribute(activeAttribute, 'true');
                     }
                 }
             }
 
             function isActive(tab: HTMLAnchorElement): boolean {
-                return tab.classList.contains(activeClass);
+                return tab.hasAttribute(activeAttribute)
             }
 
             // Build Tabs
@@ -61,7 +61,7 @@ Joda.registerTemplate(
                     tab.setAttribute('data-tab-id', tabId);
                     tab.innerText = tabName;
                     if (i === 0) {
-                        tab.classList.add(activeClass);
+                        tab.setAttribute(activeAttribute, 'true')
                     }
                     tabContainer?.appendChild(tab);
                 }

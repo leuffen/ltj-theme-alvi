@@ -13,13 +13,13 @@
             font-weight: 100;
             white-space: nowrap;
 
-            &.active,
+            &[data-active],
             &:hover {
                 background-color: var(--alvi-background-grey);
                 color: var(--alvi-font-main) !important;
             }
 
-            &.active {
+            &[data-active] {
                 font-weight: 400;
             }
 
@@ -31,7 +31,7 @@
 
     .children {
         section {
-            &:not(.active) {
+            &:not([data-active]) {
                 display: none;
             }
         }
