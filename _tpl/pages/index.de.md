@@ -8,7 +8,7 @@ Wir helfen Ihnen weiter:
 # Ihr zertifizierter Partner für individuelle ITK-Lösungen
 {: layout="use: #header"}
    
-![Background Image with City Skyline](https://assets.volkmann.dev/alvi/skyline.png)
+![Background Image with City Skyline](https://assets.volkmann.dev/alvi/city.jpg)
    
 [Alle Leistungen ansehen](/#leistungen)
 
@@ -30,8 +30,10 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 ## Produkt- und Lösungsportfolio
 {: layout="use: #two-columns"}
 
-![Illustration](https://assets.volkmann.dev/alvi/alvi-illustration-1.png)
+---
+![Illustration](https://assets.volkmann.dev/alvi/molecules.png)
 
+---
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
 [Erfahren Sie mehr](#)
@@ -54,7 +56,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 [Erfahren Sie mehr](#){.alvi-link-arrow .d-inline-flex .mt-4}
 
 ---
-![Illustration](https://assets.volkmann.dev/alvi/alvi-illustration-1.png)
+![Illustration](https://assets.volkmann.dev/alvi/molecules.png)
 
 ### Tab Content 2
 {: layout="use: #two-columns; bg: var(--alvi-background-grey)"}
@@ -67,7 +69,7 @@ Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut. Lorem ip
 [Erfahren Sie mehr](#){.alvi-link-arrow .d-inline-flex .mt-4}
 
 ---
-![Illustration](https://assets.volkmann.dev/alvi/alvi-illustration-1.png)
+![Illustration](https://assets.volkmann.dev/alvi/molecules.png)
 
 ### Tab Content 3
 {: layout="use: #two-columns; bg: var(--alvi-background-grey)"}
@@ -82,7 +84,7 @@ Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit ame
 ---
 {: layout="use: #positioned-links" .tjs-positioned-links}
 
-![Illustration](https://assets.volkmann.dev/alvi/3d-building.jpg)
+![Illustration](https://assets.volkmann.dev/alvi/building.png)
 
 - <a style="left: 20%; top: 10%;" href="#">Rufanlagen</a>
 - <a style="left: 5%; top: 30%;" href="#">Brandmeldeanlagen</a>
@@ -114,7 +116,7 @@ Dies ist der Text zum Bild 3.
 ## Zulassungen und Zertifikate - für höchste Qualitätsstandards
 {: layout="use: #banner"}
 
-![Icon](https://assets.volkmann.dev/alvi/certificate.png)
+![Icon](https://assets.volkmann.dev/alvi/degree-white.png)
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
