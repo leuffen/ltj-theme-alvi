@@ -6,7 +6,7 @@ Wir helfen Ihnen weiter:
 [24h-Störungsdienst](tel:+123456789)
 
 # Ihr zertifizierter Partner für individuelle ITK-Lösungen
-{: layout="use: #header"}
+{: layout="use: #header; fade: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%)"}
    
 ![Background Image with City Skyline](https://assets.volkmann.dev/alvi/city.jpg)
    
