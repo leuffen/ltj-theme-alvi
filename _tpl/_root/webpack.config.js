@@ -4,8 +4,8 @@ module.exports = {
     entry: {
 
 
-        'assets/dist/index': './src/index.ts',
-        'assets/dist/embed': './src/embed.ts'
+        '_includes/dist/embed': './src/embed.ts',
+        'assets/dist/index': './src/index.ts'
     },
     cache: true,
     module: {
@@ -51,17 +51,7 @@ module.exports = {
     // switch to: 'development' to debug
     mode: "production",
 
-    plugins: [
 
-        new MiniCssExtractPlugin({
-          // Options similar to the same options in webpackOptions.output
-          // both options are optional
-          filename: "[name].css",
-          chunkFilename: "[id].css",
-        }),
-
-
-    ],
 
     optimization: {
         minimize: true,

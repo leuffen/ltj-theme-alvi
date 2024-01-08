@@ -3,6 +3,7 @@ layout: article
 order: 1
 pid: pages/index
 lang: de
+permalink: "/"
 ---
 
 ---
