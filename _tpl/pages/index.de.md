@@ -6,9 +6,9 @@ Wir helfen Ihnen weiter:
 [24h-Störungsdienst](tel:+123456789)
 
 # Ihr zertifizierter Partner für individuelle ITK-Lösungen
-{: layout="use: #header"}
+{: layout="use: #header; fade: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%)"}
    
-![Background Image with City Skyline](https://assets.volkmann.dev/alvi/skyline.png)
+![Background Image with City Skyline](https://assets.volkmann.dev/alvi/city.jpg)
    
 [Alle Leistungen ansehen](/#leistungen)
 
@@ -30,50 +30,35 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 ## Produkt- und Lösungsportfolio
 {: layout="use: #two-columns"}
 
-![Illustration](https://assets.volkmann.dev/alvi/alvi-illustration-1.png)
+![Illustration](https://assets.volkmann.dev/alvi/molecules.png)
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
-[Erfahren Sie mehr](#)
+[Erfahren Sie mehr](#){.alvi-link-arrow .d-inline-flex .mt-4}
 
 ---
 {: layout="use: #tabs" .section-h2}
 
-- [Tab A](#tab-content-1){data-tab .active}
-- [Tab B](#tab-content-2){data-tab}
-- [Tab C](#tab-content-3){data-tab}
-
 ### Tab Content 1
-{: layout="use: #two-columns; bg: var(--alvi-background-grey)"}
-
----
-{#tab-content-1}
+{: layout="use: #two-columns; bg: var(--alvi-background-grey)" data-section-data-title="Tab A"}
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.
 
 [Erfahren Sie mehr](#){.alvi-link-arrow .d-inline-flex .mt-4}
 
----
-![Illustration](https://assets.volkmann.dev/alvi/alvi-illustration-1.png)
+![Illustration](https://assets.volkmann.dev/alvi/molecules.png)
 
 ### Tab Content 2
-{: layout="use: #two-columns; bg: var(--alvi-background-grey)"}
-
----
-{#tab-content-2}
+{: layout="use: #two-columns; bg: var(--alvi-background-grey)" data-section-data-title="Tab B"}
 
 Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut. Lorem ipsum dolor sit amet.
 
 [Erfahren Sie mehr](#){.alvi-link-arrow .d-inline-flex .mt-4}
 
----
-![Illustration](https://assets.volkmann.dev/alvi/alvi-illustration-1.png)
+![Illustration](https://assets.volkmann.dev/alvi/molecules.png)
 
 ### Tab Content 3
-{: layout="use: #two-columns; bg: var(--alvi-background-grey)"}
-
----
-{#tab-content-3}
+{: layout="use: #two-columns; bg: var(--alvi-background-grey)" data-section-data-title="Tab C"}
 
 Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren
 
@@ -82,7 +67,7 @@ Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit ame
 ---
 {: layout="use: #positioned-links" .tjs-positioned-links}
 
-![Illustration](https://assets.volkmann.dev/alvi/3d-building.jpg)
+![Illustration](https://assets.volkmann.dev/alvi/building.png){data-two-columns-ignore}
 
 - <a style="left: 20%; top: 10%;" href="#">Rufanlagen</a>
 - <a style="left: 5%; top: 30%;" href="#">Brandmeldeanlagen</a>
@@ -114,7 +99,7 @@ Dies ist der Text zum Bild 3.
 ## Zulassungen und Zertifikate - für höchste Qualitätsstandards
 {: layout="use: #banner"}
 
-![Icon](https://assets.volkmann.dev/alvi/certificate.png)
+![Icon](https://assets.volkmann.dev/alvi/degree-white.png)
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
@@ -175,5 +160,4 @@ Unser [24-Stunden-Notdienst](#) hilft Ihnen jedoch auch außerhalb unserer Öffn
 ---
 {: layout="use: #postfooter" .section-h2}
 
-<!-- TODO: How to use JS expressions here? -->
-&copy; {year} ALVI GmbH & Co. KG - Alle Rechte vorbehalten - Eine LEUFFEN.DE Website
+&copy; 2023 ALVI GmbH & Co. KG - Alle Rechte vorbehalten - Eine LEUFFEN.DE Website

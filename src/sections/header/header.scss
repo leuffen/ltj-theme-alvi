@@ -1,16 +1,38 @@
 .tjs-header {
+    position: relative;
+
     img {
         min-height: 300px;
-        max-height: 400px;
+        max-height: 500px;
         width: 100vw;
         object-fit: cover;
     }
+
     .container {
         position: relative;
+    }
 
+    &__content {
+        position: absolute;
+        bottom: 4rem;
+    }
+
+    &__fade {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &.sm {
         .tjs-header__content {
-            position: absolute;
-            bottom: 2rem;
+            bottom: 7rem;
+        }
+    }
+
+    &.xl {
+        .tjs-header__content {
+            bottom: 9rem;
         }
     }
 }

@@ -4,12 +4,11 @@ Joda.registerTemplate(
     "tabs",
     // language=HTML
     `
-        <section class="tjs-tabs">
+        <section class="tjs-tabs :: :md: medium">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="tjs-tabs__tabs d-flex gap-2">
-                            <slot data-select="li > a[data-tab]"></slot>
                         </div>
                     </div>
                 </div>
@@ -20,36 +19,56 @@ Joda.registerTemplate(
     {},
     {
         onAfterAllTemplatesConnectedCallback: (element: HTMLElement) => {
-            const tabs = element.querySelectorAll<HTMLAnchorElement>(".tjs-tabs__tabs a");
-            const activeClass = "active";
+            const activeAttribute = "data-active";
+            const sections = element.querySelectorAll<HTMLElement>(".children > section");
+            const tabContainer = element.querySelector<HTMLDivElement>(".tjs-tabs__tabs");
 
             function deactivateTabsAndSections(): void {
                 const sections = element.querySelectorAll(".children > section");
                 sections.forEach(child => {
-                    child.classList.remove(activeClass);
+                    child.removeAttribute(activeAttribute);
                 });
                 tabs.forEach(tab => {
-                    tab.classList.remove(activeClass);
+                    tab.removeAttribute(activeAttribute);
                 });
             }
 
             function activateTabAndSection(tab: HTMLAnchorElement): void {
-                const id = tab.getAttribute('href');
+                const id = tab.getAttribute('data-tab-id');
                 const parent = tab.closest('section');
-                const tabContentIdElem = parent.querySelector(`.children ${id}`);
+                const tabContentIdElem = parent.querySelector(`.children section[data-tab-id="${id}"]`);
                 if (tabContentIdElem) {
                     const tabContentSection = tabContentIdElem.closest('section');
                     if (tabContentSection) {
-                        tabContentSection.classList.add(activeClass);
-                        tab.classList.add(activeClass);
+                        tabContentSection.setAttribute(activeAttribute, 'true');
+                        tab.setAttribute(activeAttribute, 'true');
                     }
                 }
             }
 
             function isActive(tab: HTMLAnchorElement): boolean {
-                return tab.classList.contains(activeClass);
+                return tab.hasAttribute(activeAttribute)
             }
 
+            // Build Tabs
+            sections.forEach((section, i) => {
+                const tabName = section.getAttribute('data-title');
+                const tabId = tabName?.toLowerCase().replace(/ /g, '-');
+                section.setAttribute('data-tab-id', tabId);
+                if (tabName) {
+                    const tab = document.createElement('a');
+                    tab.setAttribute('href', '#');
+                    tab.setAttribute('data-tab-id', tabId);
+                    tab.innerText = tabName;
+                    if (i === 0) {
+                        tab.setAttribute(activeAttribute, 'true')
+                    }
+                    tabContainer?.appendChild(tab);
+                }
+            });
+
+            // Add Event Listeners
+            const tabs = element.querySelectorAll<HTMLAnchorElement>(".tjs-tabs__tabs a");
             tabs.forEach(tab => {
                 if (isActive(tab)) {
                     activateTabAndSection(tab);

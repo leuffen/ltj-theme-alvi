@@ -4,25 +4,23 @@ Joda.registerTemplate(
     "two-columns",
     // language=HTML
     `
-        <section class="tjs-two-columns container-fluid">
-            <slot data-select="h3"></slot>
-            <div class="container">
-                <div class="row :: mobile :md: desktop">
-                    <slot data-select=":scope > .children > *" data-replace data-child-class=":: col-12 :md: col-6"></slot>
+        <section class="tjs__sec-card-2col [[layout.class]] :: mobile :lg: desktop">
+            <div class="tjs__sec-card-2col--container [[layout.container]]">
+                <div class="row :: d-flex gap-5 :lg: gap-0">
+                    <div class="tjs__sec-card-2col--col-start tjs__section-text p-4 p-lg-5 :: col-12 :lg: col-[[layout.cols]]">
+                        <slot></slot>
+                    </div>
+                    <div class="tjs__sec-card-2col--col-end image-side :: col-12 :lg: col-[[12 - layout.cols]] ">
+                        <slot data-select="img:not([data-two-columns-ignore]), .children > *, .children > .section-hr.aside, .aside"></slot>
+                    </div>
                 </div>
             </div>
         </section>
     `,
-    {},
     {
-        onAfterConnectedCallback: (element: HTMLElement) => {
-            const h3Slot = element.querySelector("slot[data-select='h3']");
-            const firstColumn = element.querySelector(".row :first-child");
-
-            // We need to select the heading separately and move it into the right place
-            if (h3Slot && firstColumn) {
-                firstColumn.prepend(h3Slot)
-            }
-        }
+        cols: 6,
+        container: 'container',
+    },
+    {
     }
 );

@@ -5,6 +5,10 @@ $padding: 1rem;
     border-top: $border;
     overflow: hidden;
 
+    h3 {
+        margin-bottom: .3rem;
+    }
+
     &.border-bottom {
         border-bottom: $border;
     }

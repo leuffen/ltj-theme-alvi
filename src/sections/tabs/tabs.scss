@@ -1,7 +1,9 @@
 .tjs-tabs {
     &__tabs {
-        a {
-            padding: 1rem 2.5rem;
+        overflow: auto;
+
+        a[data-tab-id] {
+            padding: .6rem 1.1rem;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
             text-transform: uppercase;
@@ -9,14 +11,15 @@
             border: 1px solid var(--alvi-background-grey);
             border-bottom-width: 0;
             font-weight: 100;
+            white-space: nowrap;
 
-            &.active,
+            &[data-active],
             &:hover {
                 background-color: var(--alvi-background-grey);
                 color: var(--alvi-font-main) !important;
             }
 
-            &.active {
+            &[data-active] {
                 font-weight: 400;
             }
 
@@ -28,9 +31,15 @@
 
     .children {
         section {
-            &:not(.active) {
+            &:not([data-active]) {
                 display: none;
             }
+        }
+    }
+
+    &.medium {
+        a[data-tab-id] {
+            padding: 1rem 2.5rem;
         }
     }
 }
