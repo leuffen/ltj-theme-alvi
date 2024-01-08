@@ -1,4 +1,11 @@
 ---
+layout: article
+order: 1
+pid: pages/index
+lang: de
+---
+
+---
 {: layout="use: #prenav" .section-h2}
 
 **Sie haben ein Problem?**
