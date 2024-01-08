@@ -1,2 +1,3 @@
 
-import "@leuffen/themejs1/embed"
+import "./_variables.scss";
+import "@leuffen/ltj-theme-alvi/embed"

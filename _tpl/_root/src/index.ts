@@ -1,3 +1,3 @@
-import "@leuffen/themejs1/index"
+import "@leuffen/ltj-theme-alvi/theme/index"
 
 

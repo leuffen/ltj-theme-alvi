@@ -1,15 +1,11 @@
 const path = require('path');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
     entry: {
-        '_includes/dist/style_embed': './src/style_embed.scss',
-        'assets/dist/style': './src/style.scss',
-        'assets/dist/style_late': './src/style_late.scss',
-        'assets/dist/style_custom': './src/style_custom.scss',
+
 
         'assets/dist/index': './src/index.ts',
-        '_includes/dist/index_embed': './src/index_embed.ts'
+        'assets/dist/embed': './src/embed.ts'
     },
     cache: true,
     module: {
@@ -38,9 +34,11 @@ module.exports = {
             },
             {
                 test: /\.(scss|css)$/,
-                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
-                include: path.resolve(__dirname, "src")
+                use: [
+                    "style-loader", "css-loader", 'sass-loader'],
+                include: path.resolve(__dirname, "")
             },
+
 
 
         ],
