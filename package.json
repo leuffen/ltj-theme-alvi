@@ -1,6 +1,6 @@
 {
     "name": "@leuffen/ltj-theme-alvi",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "",
     "license": "proprietary",
     "main": "./dist/index.js",
