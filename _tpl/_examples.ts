@@ -4,3 +4,4 @@ import {JodaDescriptionManager} from "@leuffen/jodastyle";
 
 JodaDescriptionManager.addMarkdownPage("/_tpl/pages/index.de.md", "pages/index");
 JodaDescriptionManager.addMarkdownPage("/_tpl/pages/impressum.de.md", "pages/impressum");
+
