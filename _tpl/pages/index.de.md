@@ -168,4 +168,4 @@ Unser [24-Stunden-Notdienst](#) hilft Ihnen jedoch auch außerhalb unserer Öffn
 ---
 {: layout="use: #postfooter" .section-h2}
 
-&copy; 2023 ALVI GmbH & Co. KG - Alle Rechte vorbehalten - Eine LEUFFEN.DE Website
+&copy; 2024 ALVI GmbH & Co. KG - Alle Rechte vorbehalten - Eine LEUFFEN.DE Website
