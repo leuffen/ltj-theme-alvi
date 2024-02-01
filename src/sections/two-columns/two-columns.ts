@@ -11,7 +11,7 @@ Joda.registerTemplate(
                         <slot></slot>
                     </div>
                     <div class="tjs__sec-card-2col--col-end image-side :: col-12 :lg: col-[[12 - layout.cols]] ">
-                        <slot data-select="img:not([data-two-columns-ignore]), .children > *, .children > .section-hr.aside, .aside"></slot>
+                        <slot data-select="img:not(.data-two-columns-ignore), .children > *, .children > .section-hr.aside, .aside"></slot>
                     </div>
                 </div>
             </div>

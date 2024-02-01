@@ -42,7 +42,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
-[Erfahren Sie mehr](#){.alvi-link-arrow .d-inline-flex .mt-4}
+[Erfahren Sie mehr](#){: .alvi-link-arrow.d-inline-flex.mt-4}
 
 ---
 {: layout="use: #tabs" .section-h2}
@@ -52,7 +52,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.
 
-[Erfahren Sie mehr](#){.alvi-link-arrow .d-inline-flex .mt-4}
+[Erfahren Sie mehr](#){: .alvi-link-arrow.d-inline-flex.mt-4}
 
 ![Illustration](https://assets.volkmann.dev/alvi/molecules.png)
 
@@ -61,7 +61,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut. Lorem ipsum dolor sit amet.
 
-[Erfahren Sie mehr](#){.alvi-link-arrow .d-inline-flex .mt-4}
+[Erfahren Sie mehr](#){: .alvi-link-arrow.d-inline-flex.mt-4}
 
 ![Illustration](https://assets.volkmann.dev/alvi/molecules.png)
 
@@ -70,12 +70,12 @@ Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut. Lorem ip
 
 Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren
 
-[Mehr erfahren](#){.alvi-link-arrow .d-inline-flex .mt-4}
+[Mehr erfahren](#){: .alvi-link-arrow.d-inline-flex.mt-4}
 
 ---
 {: layout="use: #positioned-links" .tjs-positioned-links}
 
-![Illustration](https://assets.volkmann.dev/alvi/building.png){data-two-columns-ignore}
+![Illustration](https://assets.volkmann.dev/alvi/building.png){: .data-two-columns-ignore}
 
 - <a style="left: 20%; top: 10%;" href="#">Rufanlagen</a>
 - <a style="left: 5%; top: 30%;" href="#">Brandmeldeanlagen</a>
