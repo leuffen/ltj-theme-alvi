@@ -1,4 +1,5 @@
 import "./sections/accordion/accordion";
+import "./sections/form/form";
 import "./sections/header/header";
 import "./sections/header1/header1";
 import "./sections/header-center/header-center";
