@@ -7,3 +7,18 @@ h5,
 h6 {
     color: var(--alvi-font-main);
 }
+
+main,
+article {
+    section {
+        &:not(:last-child) {
+            margin-bottom: 5rem;
+        }
+
+        // Hide "empty" sections at the beginning:
+        // section-h1pre, section-h2
+        &:not([layout-orig]) {
+            display: none;
+        }
+    }
+}

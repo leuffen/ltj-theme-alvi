@@ -50,7 +50,7 @@
 }
 
 .draw-border {
-    @include btn-border-drawing(var(--alvi-primary), var(--alvi-grey), 2px, bottom, left);
+    @include btn-border-drawing(var(--alvi-primary), var(--alvi-grey), .5px, bottom, left);
 }
 
 .alvi-btn {
@@ -81,7 +81,7 @@
         color: var(--alvi-primary);
 
         &.draw-border {
-            @include btn-border-drawing(var(--alvi-white), var(--alvi-dark-grey), 2px, bottom, left);
+            @include btn-border-drawing(var(--alvi-white), var(--alvi-dark-grey), .5px, bottom, left);
         }
     }
 }

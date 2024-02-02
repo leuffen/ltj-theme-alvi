@@ -1,6 +1,10 @@
 .tjs-header {
     position: relative;
 
+    &:has(+ section.tjs-ribbon) {
+        margin-bottom: 0;
+    }
+
     img {
         min-height: 300px;
         max-height: 500px;
