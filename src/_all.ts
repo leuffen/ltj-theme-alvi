@@ -1,6 +1,7 @@
 import "./sections/accordion/accordion";
 import "./sections/header/header";
 import "./sections/header1/header1";
+import "./sections/hr/hr";
 import "./sections/prenav/prenav";
 import "./sections/ribbons/ribbons";
 import "./sections/two-columns/two-columns";
