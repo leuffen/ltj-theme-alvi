@@ -96,7 +96,13 @@ i, em {
     font-style: italic;
 }
 
+.text-transform-none {
+    text-transform: none;
+}
 
+.font-weight-semi-bold {
+    font-weight: 600;
+}
 
 // Mixin for responsive typography
 @mixin responsive-typography {
