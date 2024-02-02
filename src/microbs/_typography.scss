@@ -16,6 +16,10 @@ h1 {
     font-size: 1.8rem;
     font-weight: 600;
 
+    &:has(+ p:not(:empty)) {
+        margin-bottom: 1rem;
+    }
+
     @media (min-width: map.get($breakpoints, 'md')) {
         font-size: 38px;
         line-height: 52px;
