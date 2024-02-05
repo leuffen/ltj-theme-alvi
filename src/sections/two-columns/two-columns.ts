@@ -10,7 +10,7 @@ Joda.registerTemplate(
                     <div class="tjs__sec-card-2col--col-start tjs__section-text p-4 p-lg-5 [[layout.colOneClass]] :: col-12 :lg: col-[[layout.cols]]">
                         <slot></slot>
                     </div>
-                    <div class="tjs__sec-card-2col--col-end image-side :: col-12 :lg: col-[[layout.colsSecondColumn ?? (12 - layout.cols)]] ">
+                    <div class="tjs__sec-card-2col--col-end image-side :: col-12 :lg: col-[[layout.colsSecondColumn || (12 - layout.cols)]] ">
                         <slot data-select="img:not(.data-two-columns-ignore), .children > *, .children > .section-hr.aside, .aside"></slot>
                     </div>
                 </div>
