@@ -26,6 +26,18 @@ h1 {
     }
 }
 
+h1,
+h2 {
+    color: #707070;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    color: var(--alvi-grey);
+}
+
 h2,
 h3 {
     text-transform: uppercase;
@@ -54,9 +66,10 @@ h6 {
 
 // Body Text
 body {
+    color: var(--alvi-grey);
     font-family: $font-family-base;
     font-size: $font-size-base;
-    font-weight: $body-font-weight;
+    font-weight: var(--alvi-font-weight-light);
     line-height: $line-height-base;
 }
 

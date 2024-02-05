@@ -31,8 +31,9 @@ $font-size-h6: 1rem !default;
 $font-size-p: 1rem !default;
 $font-size-footer: .9rem !default;
 
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
 $font-weight-semibold: 600 !default;
-$font-weight-footer: 300 !default;
 
 $card-2-padding-sm: 1rem;
 $card-2-padding-md: 2rem;
@@ -48,8 +49,9 @@ $card-2-padding-md: 2rem;
     --alvi-background-grey: #{$background-grey};
     --alvi-background-grey-dark: #{$background-grey-dark};
     --alvi-font-size-footer: #{$font-size-footer};
+    --alvi-font-weight-normal: #{$font-weight-normal};
     --alvi-font-weight-semibold: #{$font-weight-semibold};
-    --alvi-font-weight-footer: #{$font-weight-footer};
+    --alvi-font-weight-light: #{$font-weight-light};
     --alvi-card-2-padding-sm: #{$card-2-padding-sm};
     --alvi-card-2-padding-md: #{$card-2-padding-md};
     --alvi-form-input-border-color: #{$form-input-border};

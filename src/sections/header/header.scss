@@ -1,5 +1,6 @@
 .tjs-header {
     position: relative;
+    font-weight: var(--alvi-font-weight-normal);
 
     &:has(+ section.tjs-ribbon) {
         margin-bottom: 0;
