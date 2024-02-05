@@ -23,10 +23,48 @@
             }
         }
 
-        input:not([type="radio"]) {
+        input:not([type="radio"], [type="checkbox"]) {
             width: 100%;
             padding: .75rem;
             border: 1px solid var(--alvi-font-main);
+        }
+
+        .form-group-checkbox {
+            input {
+                appearance: none;
+                display: none;
+
+                &[checked] {
+                    & + label {
+                        svg {
+                            path.checkmark {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+            label {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 16px;
+                font-weight: ;
+
+                a {
+                    font-weight: 600;
+                }
+
+                svg {
+                    fill: var(--alvi-primary);
+                    path {
+                        transition: all 400ms ease;
+                        &.checkmark {
+                            opacity: .2;
+                        }
+                    }
+                }
+            }
         }
 
         .form-group-radio {
