@@ -1,13 +1,14 @@
 .tjs-positioned-links {
     position: relative;
 
-    &.md {
+    &.lg {
+        transform: translateY(var(--layout-dy, 0));
         img {
             transform-origin: top right;
             transform: scale(var(--layout-scale, 1));
         }
     }
-    &:not(.md) {
+    &:not(.lg) {
         --layout-scale: 1 !important;
     }
 
