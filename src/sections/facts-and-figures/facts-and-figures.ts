@@ -5,8 +5,8 @@ Joda.registerTemplate("facts-and-figures",
     `
         <section class="tjs-facts-and-figures :: :md: md">
             <div class="container">
-                <div class="row">
-                    <div class="col-12">
+                <div class="row justify-content-center">
+                    <div class=":: col-10 :md: col-12">
                         <slot></slot>
                     </div>
                 </div>
