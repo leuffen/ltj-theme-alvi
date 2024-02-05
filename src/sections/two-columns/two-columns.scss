@@ -6,19 +6,26 @@
         --joda-class: p-4 p-lg-5;
     }
 
-    &.mobile.text-first {
+    &.mobile,
+    &.reverse {
         .row > &--col-start {
             order: 1;
         }
     }
 
-    .row > &--col-start {
-        order: 99;
+    &:not(.reverse) {
+        .row > .tjs__sec-card-2col--col-start {
+            order: 99;
+        }
     }
 
-    .row > &--col-end {
-        order: 50;
+    &.image-align-center {
+        .image-side {
+            display: flex;
+            align-items: center;
+        }
     }
+
 
     &.desktop {
         &:nth-of-type(odd) {
