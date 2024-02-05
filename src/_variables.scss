@@ -17,6 +17,7 @@ $card-border-color: #ddd !default;
 $col-background: #263238 !default;
 $slider-button-color: #454545 !default;
 $divider: #e7e8ec !default;
+$form-input-border: #808080 !default;
 
 $font-size-base: 1rem !default;
 $font-size-lg: 1.25rem !default;
@@ -33,6 +34,9 @@ $font-size-footer: .9rem !default;
 $font-weight-semibold: 600 !default;
 $font-weight-footer: 300 !default;
 
+$card-2-padding-sm: 1rem;
+$card-2-padding-md: 2rem;
+
 :root {
     --alvi-primary: #{$primary};
     --alvi-grey: #{$grey};
@@ -46,4 +50,7 @@ $font-weight-footer: 300 !default;
     --alvi-font-size-footer: #{$font-size-footer};
     --alvi-font-weight-semibold: #{$font-weight-semibold};
     --alvi-font-weight-footer: #{$font-weight-footer};
+    --alvi-card-2-padding-sm: #{$card-2-padding-sm};
+    --alvi-card-2-padding-md: #{$card-2-padding-md};
+    --alvi-form-input-border-color: #{$form-input-border};
 }
