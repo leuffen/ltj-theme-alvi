@@ -16,16 +16,21 @@ Joda.registerTemplate(
 
             const checkboxes: HTMLInputElement[] = [];
             const radioNodeLists: RadioNodeList[] = [];
-            for (let element of form.elements) {
-                const el = form.elements[element.name];
-                if (el instanceof RadioNodeList) {
-                    if (!radioNodeLists.includes(el)) {
-                        radioNodeLists.push(el);
+
+            const formElementNames = Object.keys(form.elements).filter(key => isNaN(parseInt(key, 10)));
+            for (const name of formElementNames) {
+                const formElement = form.elements.namedItem(name);
+                if (formElement instanceof RadioNodeList) {
+                    if (!radioNodeLists.includes(formElement)) {
+                        radioNodeLists.push(formElement);
                     }
                 }
 
-                if (el instanceof HTMLInputElement && el.type === "checkbox") {
-                    checkboxes.push(el);
+                if (formElement instanceof HTMLInputElement && formElement.type === "checkbox") {
+                    const alreadyAdded = checkboxes.find(checkbox => checkbox.id === formElement.id);
+                    if (!alreadyAdded) {
+                        checkboxes.push(formElement);
+                    }
                 }
             }
 
