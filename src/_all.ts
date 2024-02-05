@@ -9,6 +9,8 @@ import "./sections/ribbons/ribbons";
 import "./sections/two-columns/two-columns";
 import "./sections/slider/slider";
 import "./sections/banner/banner";
+import "./sections/card-2/card-2";
+import "./sections/cards-2/cards-2";
 import "./sections/cards/cards";
 import "./sections/footer/footer";
 import "./sections/postfooter/postfooter";

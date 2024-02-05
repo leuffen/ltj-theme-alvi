@@ -85,6 +85,17 @@
         border-width: 2px;
     }
 
+    &.inverted {
+        border-width: 1px;
+        border-color: var(--alvi-primary);
+        font-weight: var(--alvi-font-weight-semibold);
+
+        &:hover {
+            background-color: var(--alvi-primary);
+            color: var(--alvi-white);
+        }
+    }
+
     &.uppercase {
         text-transform: uppercase;
     }

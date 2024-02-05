@@ -1,0 +1,26 @@
+.tjs-cards-2 {
+    .tjs-card-2 {
+        &--inner {
+            margin: 1rem;
+        }
+        &:nth-child(1) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &.md {
+        .tjs-card-2 {
+            &:nth-child(1) {
+                margin-bottom: 0;
+                & .tjs-card-2--inner {
+                    margin-right: 1rem;
+                }
+            }
+        }
+
+        .tjs-card-2--inner {
+            margin: 0;
+            padding: 2rem;
+        }
+    }
+}
