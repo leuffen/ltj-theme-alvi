@@ -6,32 +6,18 @@
         --joda-class: p-4 p-lg-5;
     }
 
-    &.mobile,
-    &.reverse {
-        .row > &--col-start {
-            order: 1;
+    &.reverse,
+    &.mobile.reverse-mobile,
+    &.desktop.reverse-desktop {
+        .row > div:nth-child(1) {
+            order: 2;
         }
     }
 
-    &:not(.reverse) {
-        .row > .tjs__sec-card-2col--col-start {
-            order: 99;
-        }
-    }
-
-    &.image-align-center {
-        .image-side {
+    .image-side {
+        &:has(img) {
             display: flex;
             align-items: center;
-        }
-    }
-
-
-    &.desktop {
-        &:nth-of-type(odd) {
-            .row {
-                flex-direction: row-reverse;
-            }
         }
     }
 }
