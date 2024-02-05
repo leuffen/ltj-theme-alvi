@@ -4,7 +4,7 @@ Joda.registerTemplate(
     "form",
     // language=HTML
     `
-        <section class="tjs-form">
+        <section class="tjs-form :: sm :md: md">
             <slot></slot>
         </section>
     `,
