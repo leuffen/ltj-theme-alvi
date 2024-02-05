@@ -30,6 +30,7 @@ $font-size-h6: 1rem !default;
 $font-size-p: 1rem !default;
 $font-size-footer: .9rem !default;
 
+$font-weight-semibold: 600 !default;
 $font-weight-footer: 300 !default;
 
 :root {
@@ -42,5 +43,6 @@ $font-weight-footer: 300 !default;
     --alvi-background-grey: #{$background-grey};
     --alvi-background-grey-dark: #{$background-grey-dark};
     --alvi-font-size-footer: #{$font-size-footer};
+    --alvi-font-weight-semibold: #{$font-weight-semibold};
     --alvi-font-weight-footer: #{$font-weight-footer};
 }

@@ -101,7 +101,7 @@ i, em {
 }
 
 .font-weight-semi-bold {
-    font-weight: 600;
+    font-weight: var(--alvi-font-weight-semibold);
 }
 
 // Mixin for responsive typography

@@ -1,4 +1,7 @@
+@import '../../components/mixins/button.scss';
+
 .tjs-form {
+    --margin-y: 1rem;
 
     &.md {
         .form-group-radio {
@@ -18,8 +21,8 @@
         box-shadow: 0 1px 2px #00000029;
 
         & > div {
-            &:not(:last-child) {
-                margin-bottom: 1rem;
+            &:not(:last-child, .form-group-radio, .form-group-checkbox) {
+                margin-bottom: var(--margin-y);
             }
         }
 
@@ -29,7 +32,16 @@
             border: 1px solid var(--alvi-font-main);
         }
 
+        button {
+            @include alvi-button;
+            width: 100%;
+            padding: 1rem;
+            font-weight: var(--alvi-font-weight-semibold);
+            margin-top: var(--margin-y);
+        }
+
         .form-group-checkbox {
+            padding: var(--margin-y) 0;
             input {
                 appearance: none;
                 display: none;
@@ -49,10 +61,9 @@
                 flex-direction: row;
                 align-items: center;
                 gap: 16px;
-                font-weight: ;
 
                 a {
-                    font-weight: 600;
+                    font-weight: var(--alvi-font-weight-semibold);
                 }
 
                 svg {
@@ -72,7 +83,7 @@
             flex-direction: column;
             justify-content: space-between;
             gap: 4px;
-            padding: 1rem 0;
+            padding: var(--margin-y) 0;
 
             & > div {
                 display: flex;
