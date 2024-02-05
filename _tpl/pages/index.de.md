@@ -66,22 +66,22 @@ Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut. Lorem ip
 ![Illustration](https://assets.volkmann.dev/alvi/molecules.png)
 
 ### Tab Content 3
-{: layout="use: #two-columns; bg: var(--alvi-background-grey)" data-section-data-title="Tab C"}
+{: layout="use: #two-columns; bg: var(--alvi-background-grey); cols: 4; colsSecondColumn: 6; spaceBetween: true" data-section-data-title="Tab C"}
 
 Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren
 
 [Mehr erfahren](#){: .alvi-link-arrow.d-inline-flex.mt-4}
 
 ---
-{: layout="use: #positioned-links" .tjs-positioned-links}
+{: layout="use: #positioned-links; scale: 1.3" .tjs-positioned-links}
 
 ![Illustration](https://assets.volkmann.dev/alvi/building.png){: .data-two-columns-ignore}
 
-- <a style="left: 20%; top: 10%;" href="#">Rufanlagen</a>
-- <a style="left: 5%; top: 30%;" href="#">Brandmeldeanlagen</a>
-- <a style="right: 5%; top: 40%;" href="#">Notbeleuchtungssysteme</a>
-- <a style="left: 10%; top: 60%;" href="#">Zugriffskontrollsysteme</a>
-- <a style="right: 30%; top: 75%;" href="#">Videoüberwachung</a>
+- <a style="--left: 20%; --top: 10%" href="#">Rufanlagen</a>
+- <a style="--left: 5%; --top: 30%" href="#">Brandmeldeanlagen</a>
+- <a style="--right: 5%; --top: 40%;" href="#">Notbeleuchtungssysteme</a>
+- <a style="--left: 10%; --top: 60%;" href="#">Zugriffskontrollsysteme</a>
+- <a style="--right: 30%; --top: 75%;" href="#">Videoüberwachung</a>
 
 ## Aktuelle Projekte
 {: layout="use: #slider"}
