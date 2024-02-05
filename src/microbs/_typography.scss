@@ -3,18 +3,33 @@
 
 @import "defaults";
 
-// Headings
-@for $i from 1 through 6 {
-    h#{$i} {
-        font-weight: $headings-font-weight;
-        line-height: $line-height-base;
-    }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: $line-height-base;
 }
-
+h1,
+h2 {
+    color: #707070;
+}
+h3,
+h4,
+h5,
+h6 {
+    color: var(--alvi-grey);
+}
+h2,
+h3 {
+    text-transform: uppercase;
+    font-weight: var(--alvi-font-weight-bold);
+}
 h1 {
     transition: font-size 100ms ease;
     font-size: 1.8rem;
-    font-weight: 600;
+    font-weight: var(--alvi-font-weight-semibold);
 
     &:has(+ p:not(:empty)) {
         margin-bottom: 1rem;
@@ -25,30 +40,10 @@ h1 {
         line-height: 52px;
     }
 }
-
-h1,
-h2 {
-    color: #707070;
-}
-
-h3,
-h4,
-h5,
-h6 {
-    color: var(--alvi-grey);
-}
-
-h2,
-h3 {
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
 h2 {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
 }
-
 h3 {
     font-size: 1rem !important;
     margin-bottom: 1rem;
