@@ -134,38 +134,4 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
 
----
-{: layout="use: #footer" .section-h2}
 
-![Logo](https://assets.volkmann.dev/alvi/alvi.png)
-
-### Kontakt
-
-ALVI GmbH & Co. KG<br>
-August-Wilhelm-Kühnholz-Straße 52<br>
-26135 Oldenburg
-
-Telefon: [+49 (0) 441 36 176 928](+4944136176928)<br>
-Telefax: [+49 (0) 441 36 176 929](+4944136176929)<br>
-E-Mail: [info@alvi-co.de](mailto:info@alvi-co.de)
-
-### Öffnungszeiten
-
-Montag bis Freitag von<br>
-07:00 - 16:00 Uhr<br>
-Samstag und Sonntag geschlossen
-
-Unser [24-Stunden-Notdienst](#) hilft Ihnen jedoch auch außerhalb unserer Öffnungszeiten gerne weiter.
-
-### Links
-
-- [Impressum](#)
-- [Datenschutz](#)
-- [AGB](#)
-- [Newsletter](#)
-- [Karriere](#)
-
----
-{: layout="use: #postfooter" .section-h2}
-
-&copy; 2023 ALVI GmbH & Co. KG - Alle Rechte vorbehalten - Eine LEUFFEN.DE Website
