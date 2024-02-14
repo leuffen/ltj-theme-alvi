@@ -1,0 +1,22 @@
+.desktop {
+    .show-arrow-after-desktop {
+        $factor: 2.5;
+        $width: 45px * $factor;
+        $height: 19px * $factor;
+
+        position: relative;
+        max-width: calc(100% - #{$width});
+
+        &::after {
+            content: '';
+            background-image: url("data:image/svg+xml,%3Csvg width='#{$width}' height='#{$height}' viewBox='0 0 45 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M38.1428 21.4751L38.1597 20.4752L38.1597 20.4752L38.1428 21.4751ZM44.595 22.2915C44.9921 21.9077 45.0028 21.2746 44.619 20.8775L38.3636 14.4067C37.9798 14.0096 37.3467 13.9989 36.9496 14.3828C36.5526 14.7666 36.5418 15.3997 36.9257 15.7968L42.486 21.5486L36.7342 27.1089C36.3371 27.4927 36.3264 28.1258 36.7102 28.5229C37.0941 28.92 37.7272 28.9307 38.1242 28.5468L44.595 22.2915ZM38.1259 22.4749L43.8831 22.5724L43.9169 20.5727L38.1597 20.4752L38.1259 22.4749ZM0.156459 1.80314C8.66524 14.4945 22.8483 22.2163 38.1259 22.4749L38.1597 20.4752C23.537 20.2276 9.96177 12.8368 1.81766 0.68941L0.156459 1.80314Z' fill='%230db2b3'/%3E%3C/svg%3E%0A");
+            display: inline-block;
+            width: $width;
+            height: $height;
+
+            position: absolute;
+            top: 10%;
+            left: 100%;
+        }
+    }
+}

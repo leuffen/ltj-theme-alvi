@@ -1,0 +1,155 @@
+@import '../../components/mixins/button.scss';
+
+.tjs-form {
+    --margin-y: 1rem;
+
+    &.md {
+        .form-group-radio {
+            flex-direction: row;
+            gap: 0;
+
+            & > div {
+                flex-grow: 1;
+                justify-content: space-evenly;
+                gap: 0;
+            }
+        }
+    }
+
+    form {
+        padding: var(--alvi-card-2-padding-md);
+        background-color: var(--alvi-white);
+        color: var(--alvi-grey);
+        box-shadow: 0 1px 2px #00000029;
+
+        & > div {
+            &:not(:last-child, .form-group-radio, .form-group-checkbox) {
+                margin-bottom: var(--margin-y);
+            }
+        }
+
+        input:not([type="radio"], [type="checkbox"]) {
+            width: 100%;
+            padding: .75rem;
+            color: var(--alvi-grey);
+            border: 1px solid var(--alvi-form-input-border-color);
+
+            &::placeholder {
+                color: var(--alvi-grey);
+            }
+        }
+
+        button {
+            @include alvi-button;
+            width: 100%;
+            padding: 1rem;
+            font-weight: var(--alvi-font-weight-semibold);
+            margin-top: var(--margin-y);
+        }
+
+        .form-group-checkbox {
+            padding: var(--margin-y) 0;
+            input {
+                appearance: none;
+                display: none;
+
+                &[checked] {
+                    & + label {
+                        svg {
+                            path {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+            label {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 16px;
+                cursor: pointer;
+
+                a {
+                    font-weight: var(--alvi-font-weight-semibold);
+                }
+
+                svg {
+                    fill: var(--alvi-primary);
+                    path {
+                        transition: all 250ms ease;
+                        opacity: .2;
+                    }
+                }
+            }
+        }
+
+        .form-group-radio {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 4px;
+            padding: var(--margin-y) 0;
+
+            & > div {
+                display: flex;
+                gap: 10px;
+            }
+
+            & > div > div {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: .5rem;
+
+                & input {
+                    position: relative;
+                    appearance: none;
+                    cursor: pointer;
+
+                    --circle-offset-x: -8px;
+                    --circle-offset-y: -16px;
+                    --circle-size: 18px;
+
+                    margin-left: 16px;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: var(--circle-offset-x);
+                        left: var(--circle-offset-y);
+                        display: block;
+                        height: var(--circle-size);
+                        width: var(--circle-size);
+                        border-radius: 50%;
+                        background-color: #fff;
+                        border: 1px solid var(--alvi-font-main);
+                    }
+
+                    &[checked] {
+                        &::after {
+                            --circle-inner-offset: 2px;
+
+                            content: '';
+                            position: absolute;
+                            top: calc(var(--circle-offset-x) + var(--circle-inner-offset));
+                            left: calc(var(--circle-offset-y) + var(--circle-inner-offset));
+                            display: block;
+                            height: calc(var(--circle-size) - var(--circle-inner-offset) * 2);
+                            width: calc(var(--circle-size) - var(--circle-inner-offset) * 2);
+                            border-radius: 50%;
+                            background-color: var(--alvi-primary);
+                            border: .5px solid #fff;
+                        }
+                    }
+                }
+
+                & label {
+                    cursor: pointer;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+
+}

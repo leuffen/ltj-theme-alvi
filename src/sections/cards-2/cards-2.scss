@@ -1,0 +1,42 @@
+.tjs-cards-2 {
+    position: relative;
+
+    .gradient {
+        position: absolute;
+        bottom: 25%;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: transparent linear-gradient(180deg, #FFFFFF 0%, #F6F6F6 100%) 0% 0% no-repeat padding-box;
+        z-index: -1;
+    }
+
+    .tjs-card-2 {
+        &--inner {
+            margin: 1rem;
+        }
+        &:nth-child(1) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &.md {
+        .gradient {
+            bottom: 50%;
+        }
+
+        .tjs-card-2 {
+            &:nth-child(1) {
+                margin-bottom: 0;
+                & .tjs-card-2--inner {
+                    margin-right: 1rem;
+                }
+            }
+        }
+
+        .tjs-card-2--inner {
+            margin: 0;
+            padding: var(--alvi-card-2-padding-md);
+        }
+    }
+}

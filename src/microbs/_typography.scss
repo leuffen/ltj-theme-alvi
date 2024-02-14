@@ -3,36 +3,47 @@
 
 @import "defaults";
 
-// Headings
-@for $i from 1 through 6 {
-    h#{$i} {
-        font-weight: $headings-font-weight;
-        line-height: $line-height-base;
-    }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: $line-height-base;
 }
-
+h1,
+h2 {
+    color: #707070;
+}
+h3,
+h4,
+h5,
+h6 {
+    color: var(--alvi-grey);
+}
+h2,
+h3 {
+    text-transform: uppercase;
+    font-weight: var(--alvi-font-weight-bold);
+}
 h1 {
     transition: font-size 100ms ease;
     font-size: 1.8rem;
-    font-weight: 600;
+    font-weight: var(--alvi-font-weight-semibold);
+
+    &:has(+ p:not(:empty)) {
+        margin-bottom: 1rem;
+    }
 
     @media (min-width: map.get($breakpoints, 'md')) {
         font-size: 38px;
         line-height: 52px;
     }
 }
-
-h2,
-h3 {
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
 h2 {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
 }
-
 h3 {
     font-size: 1rem !important;
     margin-bottom: 1rem;
@@ -50,9 +61,10 @@ h6 {
 
 // Body Text
 body {
+    color: var(--alvi-grey);
     font-family: $font-family-base;
     font-size: $font-size-base;
-    font-weight: $body-font-weight;
+    font-weight: var(--alvi-font-weight-light);
     line-height: $line-height-base;
 }
 
@@ -92,7 +104,13 @@ i, em {
     font-style: italic;
 }
 
+.text-transform-none {
+    text-transform: none;
+}
 
+.font-weight-semi-bold {
+    font-weight: var(--alvi-font-weight-semibold);
+}
 
 // Mixin for responsive typography
 @mixin responsive-typography {

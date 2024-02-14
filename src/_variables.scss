@@ -13,10 +13,11 @@ $white: #fff !default;
 $grey: #727171 !default;
 $dark-grey: #291e1e !default;
 $font-main-color: #5b5b5b !default;
-$element-border-color: #EDEDED !default;
+$card-border-color: #ddd !default;
 $col-background: #263238 !default;
 $slider-button-color: #454545 !default;
 $divider: #e7e8ec !default;
+$form-input-border: #808080 !default;
 
 $font-size-base: 1rem !default;
 $font-size-lg: 1.25rem !default;
@@ -30,7 +31,13 @@ $font-size-h6: 1rem !default;
 $font-size-p: 1rem !default;
 $font-size-footer: .9rem !default;
 
-$font-weight-footer: 300 !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-semibold: 600 !default;
+$font-weight-bold: 700 !default;
+
+$card-2-padding-sm: 1rem;
+$card-2-padding-md: 2rem;
 
 :root {
     --alvi-primary: #{$primary};
@@ -38,9 +45,16 @@ $font-weight-footer: 300 !default;
     --alvi-dark-grey: #{$dark-grey};
     --alvi-white: #{$white};
     --alvi-font-main: #{$font-main-color};
+    --alvi-card-border-color: #{$card-border-color};
     --alvi-divider: #{$divider};
     --alvi-background-grey: #{$background-grey};
     --alvi-background-grey-dark: #{$background-grey-dark};
     --alvi-font-size-footer: #{$font-size-footer};
-    --alvi-font-weight-footer: #{$font-weight-footer};
+    --alvi-font-weight-light: #{$font-weight-light};
+    --alvi-font-weight-normal: #{$font-weight-normal};
+    --alvi-font-weight-semibold: #{$font-weight-semibold};
+    --alvi-font-weight-bold: #{$font-weight-bold};
+    --alvi-card-2-padding-sm: #{$card-2-padding-sm};
+    --alvi-card-2-padding-md: #{$card-2-padding-md};
+    --alvi-form-input-border-color: #{$form-input-border};
 }

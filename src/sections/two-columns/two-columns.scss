@@ -2,34 +2,22 @@
     padding: var(--t-section-padding);
     background: var(--layout-bg);
 
-    &--container {
-        padding-top: 7rem;
-        padding-bottom: 7rem;
-    }
-
     .aside {
         --joda-class: p-4 p-lg-5;
     }
 
-    &.mobile.text-first {
-        .row > &--col-start {
-            order: 1;
+    &.reverse,
+    &.mobile.reverse-mobile,
+    &.desktop.reverse-desktop {
+        .row > div:nth-child(1) {
+            order: 2;
         }
     }
 
-    .row > &--col-start {
-        order: 99;
-    }
-
-    .row > &--col-end {
-        order: 50;
-    }
-
-    &.desktop {
-        &:nth-of-type(odd) {
-            .row {
-                flex-direction: row-reverse;
-            }
+    .image-side {
+        &:has(img) {
+            display: flex;
+            align-items: center;
         }
     }
 }

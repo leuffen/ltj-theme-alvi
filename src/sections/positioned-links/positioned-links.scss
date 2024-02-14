@@ -1,6 +1,17 @@
 .tjs-positioned-links {
     position: relative;
 
+    &.lg {
+        transform: translateY(var(--layout-dy, 0));
+        img {
+            transform-origin: top right;
+            transform: scale(var(--layout-scale, 1));
+        }
+    }
+    &:not(.lg) {
+        --layout-scale: 1 !important;
+    }
+
     a {
         $transition: all 150ms ease;
         $border-right-radius: 1rem;
@@ -15,6 +26,11 @@
         font-weight: 300;
         color: var(--alvi-font-main) !important;
         transition: $transition;
+
+        top: calc(var(--top) * var(--layout-scale, 1));
+        left: calc(var(--left) * var(--layout-scale, 1));
+        right: calc(var(--right) * var(--layout-scale, 1));
+        bottom: calc(var(--bottom) * var(--layout-scale, 1));
 
         &:after {
             $size: 1.8rem;

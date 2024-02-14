@@ -1,0 +1,111 @@
+@use "sass:math";
+
+@mixin btn-border-drawing($color: #ccc, $hover: black, $width: 1px, $vertical: top, $horizontal: left, $duration: 0.25s) {
+    box-shadow: inset 0 0 0 $width $color;
+    color: $color;
+    transition: color $duration math.div($duration, 3);
+    position: relative;
+
+    &::before,
+    &::after {
+        border: 0 solid transparent;
+        box-sizing: border-box;
+        content: '';
+        pointer-events: none;
+        position: absolute;
+        width: 0; height: 0;
+
+        #{$vertical}: 0;
+        #{$horizontal}: 0;
+    }
+
+    &::before {
+        $h-side: if($horizontal == 'left', 'right', 'left');
+
+        border-#{$vertical}-width: $width;
+        border-#{$h-side}-width: $width;
+    }
+
+    &::after {
+        $v-side: if($vertical == 'top', 'bottom', 'top');
+
+        border-#{$v-side}-width: $width;
+        border-#{$horizontal}-width: $width;
+    }
+
+    &:hover {
+        color: $hover !important;
+
+        &::before,
+        &::after {
+            border-color: $hover;
+            transition: border-color 0s, width $duration, height $duration;
+            width: 100%;
+            height: 100%;
+        }
+
+        &::before { transition-delay: 0s, 0s, $duration; }
+        &::after { transition-delay: 0s, $duration, 0s; }
+    }
+}
+
+@mixin alvi-button {
+    background-color: var(--alvi-primary);
+    color: var(--alvi-white);
+    font-weight: 300;
+    padding: .3rem .5rem;
+    text-decoration: none;
+    transition: all 150ms ease-in-out;
+
+    &:disabled {
+        background-color: var(--alvi-background-grey-dark);
+        color: var(--alvi-font-main);
+    }
+
+    &:not(.draw-border) {
+        border: 2px solid transparent;
+    }
+
+    &:not(:disabled) {
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: none !important;
+            color: var(--alvi-primary);
+            background-color: var(--alvi-white);
+
+            &:not(.draw-border) {
+                border-color: var(--alvi-primary);
+            }
+        }
+    }
+
+    &.large {
+        padding: .5rem .8rem;
+        border-width: 2px;
+    }
+
+    &.inverted {
+        border-width: 1px;
+        border-color: var(--alvi-primary);
+        font-weight: var(--alvi-font-weight-semibold);
+
+        &:hover {
+            background-color: var(--alvi-primary);
+            color: var(--alvi-white);
+        }
+    }
+
+    &.uppercase {
+        text-transform: uppercase;
+    }
+
+    &.outline {
+        background-color: transparent;
+        color: var(--alvi-primary);
+
+        &.draw-border {
+            @include btn-border-drawing(var(--alvi-white), var(--alvi-dark-grey), .5px, bottom, left);
+        }
+    }
+}
