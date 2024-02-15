@@ -1,0 +1,10 @@
+h1[id],
+h2[id],
+h3[id],
+h4[id],
+h5[id],
+h6[id] {
+    $anchor-scroll-offset: 100px;
+    margin-top: -$anchor-scroll-offset;
+    padding-top: $anchor-scroll-offset;
+}
