@@ -24,18 +24,31 @@ Joda.registerTemplate(
     {},
     {
         onAfterConnectedCallback: (el: HTMLElement) => {
+            const attributes = {
+                open: "open",
+                scrolled: "scrolled"
+            }
             const toggle = el.querySelector<HTMLButtonElement>(".toggle");
 
             if (toggle) {
                 toggle.addEventListener("click", () => {
-                    const OPEN = "open";
-                    if (el.hasAttribute(OPEN)) {
-                        el.removeAttribute(OPEN);
+                    if (el.hasAttribute(attributes.open)) {
+                        el.removeAttribute(attributes.open);
                     } else {
-                        el.setAttribute(OPEN, "");
+                        el.setAttribute(attributes.open, "");
                     }
                 });
             }
+
+            window.addEventListener("scroll", () => {
+                const prenav = el.querySelector(".tjs-prenav");
+                const threshold = prenav?.scrollHeight ?? 60;
+                if (window.scrollY > threshold) {
+                    el.setAttribute(attributes.scrolled, "")
+                } else {
+                    el.removeAttribute(attributes.scrolled)
+                }
+            })
         }
     }
 );

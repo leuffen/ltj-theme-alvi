@@ -1,11 +1,12 @@
 .tjs-navbar {
     background: var(--alvi-background-grey);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    transition: box-shadow 300ms ease;
 
-    .brand {
-        img {
-            height: 60px;
-            padding: 8px 0;
-        }
+    &[scrolled] {
+        box-shadow: rgba(0, 0, 0, 0.05) 0 2px 24px 0, rgba(0, 0, 0, 0.08) 0 0 0 1px;
     }
 
     &.lg {
@@ -22,6 +23,13 @@
         }
         .toggle {
             display: none;
+        }
+    }
+
+    .brand {
+        img {
+            height: 60px;
+            padding: 8px 0;
         }
     }
 
