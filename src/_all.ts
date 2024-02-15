@@ -14,6 +14,7 @@ import "./sections/card-2/card-2";
 import "./sections/cards-2/cards-2";
 import "./sections/cards/cards";
 import "./sections/footer/footer";
+import "./sections/map/map";
 import "./sections/postfooter/postfooter";
 import "./sections/positioned-links/positioned-links";
 import "./sections/tabs/tabs";
