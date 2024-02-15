@@ -5,27 +5,6 @@
     z-index: 1;
     transition: box-shadow 300ms ease;
 
-    &[scrolled] {
-        box-shadow: rgba(0, 0, 0, 0.05) 0 2px 24px 0, rgba(0, 0, 0, 0.08) 0 0 0 1px;
-    }
-
-    &.lg {
-        .navbar-main {
-            display: flex;
-        }
-        .toggle {
-            display: none;
-        }
-    }
-    &.xl {
-        .navbar-main {
-            display: flex;
-        }
-        .toggle {
-            display: none;
-        }
-    }
-
     .brand {
         img {
             height: 60px;
@@ -79,6 +58,82 @@
                     }
                 }
             }
+        }
+    }
+
+    .mobile-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--alvi-background-grey);
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        padding: 1.3rem;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 300ms ease;
+
+        &__top {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-self: start;
+            padding: 0;
+
+            li {
+                margin: 1rem 0;
+
+                a {
+                    color: var(--alvi-font-main);
+                    font-weight: var(--alvi-font-weight-light);
+                }
+            }
+        }
+    }
+
+    &[scrolled] {
+        box-shadow: rgba(0, 0, 0, 0.05) 0 2px 24px 0, rgba(0, 0, 0, 0.08) 0 0 0 1px;
+    }
+
+    &[open] {
+        .mobile-nav {
+            transform: translateX(0);
+        }
+    }
+
+    &.sm {
+        .mobile-nav {
+            padding: 3rem;
+        }
+    }
+    &.md {
+        .mobile-nav {
+            padding: 3rem;
+        }
+    }
+    &.lg {
+        .navbar-main {
+            display: flex;
+        }
+        .toggle {
+            display: none;
+        }
+    }
+    &.xl {
+        .navbar-main {
+            display: flex;
+        }
+        .toggle {
+            display: none;
         }
     }
 }
