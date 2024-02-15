@@ -8,7 +8,41 @@
         }
     }
 
+    &.lg {
+        .navbar-main {
+            display: flex;
+        }
+        .toggle {
+            display: none;
+        }
+    }
+    &.xl {
+        .navbar-main {
+            display: flex;
+        }
+        .toggle {
+            display: none;
+        }
+    }
+
+    .toggle {
+        background: transparent;
+        display: inline-flex;
+        align-items: center;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        svg {
+            height: 36px;
+            fill: var(--alvi-font-main);
+        }
+    }
+
     .navbar-main {
+        display: none;
+
         ul {
             height: 100%;
             display: flex;
