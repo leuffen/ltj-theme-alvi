@@ -88,11 +88,17 @@
             flex-direction: column;
             align-self: start;
             padding: 0;
+            width: 100%;
 
             li {
-                margin: 1rem 0;
+                &:not(:last-child) {
+                    margin-bottom: .5rem;
+                }
 
                 a {
+                    display: flex;
+                    padding: .75rem;
+                    padding-left: 0;
                     color: var(--alvi-font-main);
                     font-weight: var(--alvi-font-weight-light);
                 }

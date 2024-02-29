@@ -1,6 +1,5 @@
 .tjs-cards {
     padding: 4rem 0;
-    background-color: var(--alvi-background-grey);
 }
 
 .tjs-card {
@@ -10,20 +9,32 @@
         }
     }
 
+    margin-bottom: 2rem;
+
     &__content {
-        margin: .5rem;
+        $card-margin: .5rem;
+
+        margin: $card-margin;
+        height: calc(100% - $card-margin * 2);
         border-bottom: 5px solid var(--alvi-background-grey-dark);
+        display: flex;
+        flex-direction: column;
 
         img {
-            height: 200px;
+            // Revert explicit height set bei micx-cdn
+            height: unset;
             width: 100%;
-            object-fit: cover;
-            object-position: top;
+            aspect-ratio: var(--layout-aspect-ratio, 2);
+            object-fit: var(--layout-object-fit, cover);
+            object-position: var(--layout-object-position, center);
         }
 
         &__text {
+            background-color: var(--layout-card-background-color, var(--alvi-white));
             padding: 1rem;
-            background-color: var(--alvi-white);
+
+            display: flex;
+            flex-grow: 1;
 
             h3 {
                 text-transform: none;

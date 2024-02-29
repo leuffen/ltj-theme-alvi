@@ -1,8 +1,10 @@
 main,
 article {
-    section {
-        &:not(:last-child) {
-            margin-bottom: 5rem;
+    joda-split {
+        & > section {
+            &:not(:last-child) {
+                margin-bottom: 5rem;
+            }
         }
     }
 }
@@ -11,4 +13,8 @@ article {
 // section-h1pre, section-h2
 .section-h1pre:empty {
     display: none;
+}
+
+section {
+    background-color: var(--layout-background-color);
 }
