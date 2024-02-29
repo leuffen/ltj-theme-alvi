@@ -37,6 +37,11 @@
         & > div {
             padding: 1rem;
             background: var(--alvi-background-grey);
+            h3 {
+
+                margin: unset;
+                padding: unset;
+            }
         }
 
         & > div {
