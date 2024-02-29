@@ -5,4 +5,16 @@
     p {
         margin-bottom: 1rem;
     }
+
+    ol, ul {
+        list-style: inherit;
+    }
+
+    .section-h1,
+    .section-h2 {
+        margin-bottom: 3rem;
+    }
+    .section-h3 {
+        margin-bottom: 2rem;
+    }
 }

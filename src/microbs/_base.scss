@@ -1,8 +1,10 @@
 main,
 article {
-    section {
-        &:not(:last-child) {
-            margin-bottom: 5rem;
+    joda-split {
+        & > section {
+            &:not(:last-child) {
+                margin-bottom: 5rem;
+            }
         }
     }
 }
