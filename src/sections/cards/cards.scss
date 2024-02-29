@@ -11,8 +11,12 @@
     }
 
     &__content {
-        margin: .5rem;
+        $card-margin: .5rem;
+
+        margin: $card-margin;
+        height: calc(100% - $card-margin * 2);
         border-bottom: 5px solid var(--alvi-background-grey-dark);
+        background-color: var(--alvi-white);
 
         img {
             height: 200px;
@@ -23,7 +27,6 @@
 
         &__text {
             padding: 1rem;
-            background-color: var(--alvi-white);
 
             h3 {
                 text-transform: none;
