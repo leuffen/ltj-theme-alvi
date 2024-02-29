@@ -9,13 +9,16 @@
         }
     }
 
+    margin-bottom: 2rem;
+
     &__content {
         $card-margin: .5rem;
 
         margin: $card-margin;
         height: calc(100% - $card-margin * 2);
         border-bottom: 5px solid var(--alvi-background-grey-dark);
-        background-color: var(--alvi-white);
+        display: flex;
+        flex-direction: column;
 
         img {
             // Revert explicit height set bei micx-cdn
@@ -27,7 +30,11 @@
         }
 
         &__text {
+            background-color: var(--layout-card-background-color, var(--alvi-white));
             padding: 1rem;
+
+            display: flex;
+            flex-grow: 1;
 
             h3 {
                 text-transform: none;
