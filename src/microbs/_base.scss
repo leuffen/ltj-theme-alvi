@@ -12,3 +12,7 @@ article {
 .section-h1pre:empty {
     display: none;
 }
+
+section {
+    background-color: var(--layout-background-color);
+}
