@@ -4,11 +4,11 @@ article {
         &:not(:last-child) {
             margin-bottom: 5rem;
         }
-
-        // Hide "empty" sections at the beginning:
-        // section-h1pre, section-h2
-        &:not([layout-orig]) {
-            display: none;
-        }
     }
+}
+
+// Hide "empty" sections at the beginning:
+// section-h1pre, section-h2
+.section-h1pre:empty {
+    display: none;
 }

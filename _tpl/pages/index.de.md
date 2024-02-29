@@ -1,17 +1,15 @@
 ---
-layout: article
+layout: website
 order: 1
 pid: pages/index
 lang: de
 permalink: "/"
+ptags:
+    - nav
+title: Startseite
+short_title: Home
+_schiller_template: pages/index
 ---
-
----
-{: layout="use: #prenav" .section-h2}
-
-**Sie haben ein Problem?**
-Wir helfen Ihnen weiter:
-[24h-Störungsdienst](tel:+123456789)
 
 # Ihr zertifizierter Partner für individuelle ITK-Lösungen
 {: layout="use: #header; fade: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%)"}
@@ -73,7 +71,7 @@ Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit ame
 [Mehr erfahren](#){: .alvi-link-arrow.d-inline-flex.mt-4}
 
 ---
-{: layout="use: #positioned-links; scale: 1.3" .tjs-positioned-links}
+{: layout="use: #positioned-links; scale: 1.4; dy: -32px" .tjs-positioned-links}
 
 ![Illustration](https://assets.volkmann.dev/alvi/building.png){: .data-two-columns-ignore}
 
@@ -134,38 +132,3 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
 
----
-{: layout="use: #footer" .section-h2}
-
-![Logo](https://assets.volkmann.dev/alvi/alvi.png)
-
-### Kontakt
-
-ALVI GmbH & Co. KG<br>
-August-Wilhelm-Kühnholz-Straße 52<br>
-26135 Oldenburg
-
-Telefon: [+49 (0) 441 36 176 928](+4944136176928)<br>
-Telefax: [+49 (0) 441 36 176 929](+4944136176929)<br>
-E-Mail: [info@alvi-co.de](mailto:info@alvi-co.de)
-
-### Öffnungszeiten
-
-Montag bis Freitag von<br>
-07:00 - 16:00 Uhr<br>
-Samstag und Sonntag geschlossen
-
-Unser [24-Stunden-Notdienst](#) hilft Ihnen jedoch auch außerhalb unserer Öffnungszeiten gerne weiter.
-
-### Links
-
-- [Impressum](#)
-- [Datenschutz](#)
-- [AGB](#)
-- [Newsletter](#)
-- [Karriere](#)
-
----
-{: layout="use: #postfooter" .section-h2}
-
-&copy; 2024 ALVI GmbH & Co. KG - Alle Rechte vorbehalten - Eine LEUFFEN.DE Website
