@@ -19,10 +19,12 @@
         background-color: var(--alvi-white);
 
         img {
-            height: 200px;
+            // Revert explicit height set bei micx-cdn
+            height: unset;
             width: 100%;
-            object-fit: cover;
-            object-position: top;
+            aspect-ratio: var(--layout-aspect-ratio, 2);
+            object-fit: var(--layout-object-fit, cover);
+            object-position: var(--layout-object-position, center);
         }
 
         &__text {
