@@ -5,7 +5,7 @@ Joda.registerTemplate("card",
     `
         <div class="tjs-card :: col-12 :lg: col-4">
             <div class="tjs-card__content">
-                <slot data-select="img"></slot>
+                <slot data-select="a:has(img), img" data-limit="1"></slot>
                 <div class="tjs-card__content__text">
                     <slot></slot>
                 </div>
