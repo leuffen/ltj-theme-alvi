@@ -11,6 +11,10 @@
         display: flex;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
 
     .section-h3 {
@@ -48,8 +52,7 @@
         position: relative;
 
         img {
-            min-height: 300px;
-            max-height: 400px;
+            height: 500px   ;
             width: 100vw;
             object-fit: cover;
         }
@@ -58,8 +61,8 @@
             position: absolute;
             width: 100%;
             bottom: 0;
-            background-color: #ffffff80;
-            backdrop-filter: blur(6px);
+            background-color: rgb(255 255 255 / 80%);
+            backdrop-filter: blur(2px);
             padding: 1rem;
 
             h3 {
