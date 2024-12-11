@@ -11,8 +11,10 @@
     }
 
     &__content {
+        height: 100%;
         margin: .5rem;
         border-bottom: 5px solid var(--alvi-background-grey-dark);
+        background-color: var(--alvi-white);
 
         img {
             height: 200px;
@@ -23,7 +25,6 @@
 
         &__text {
             padding: 1rem;
-            background-color: var(--alvi-white);
 
             h3 {
                 text-transform: none;
