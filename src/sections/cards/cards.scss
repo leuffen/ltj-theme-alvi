@@ -1,6 +1,6 @@
 .tjs-cards {
     padding: 4rem 0;
-    background-color: var(--alvi-background-grey);
+    background-color: var(--layout-bg, var(--alvi-white));
 }
 
 .tjs-card {

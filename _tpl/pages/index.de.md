@@ -112,7 +112,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 [Zertifikate ansehen](#)
 
 ## Neuigkeiten
-{: layout="use: #cards"}
+{: layout="use: #cards"; bg: var(--alvi-background-grey)}
 
 ### News 1
 
