@@ -17,12 +17,22 @@ Joda.registerTemplate(
             const checkboxes: HTMLInputElement[] = [];
             const radioNodeLists: RadioNodeList[] = [];
 
-            const formElementNames = Object.keys(form.elements).filter(key => isNaN(parseInt(key, 10)));
-            for (const name of formElementNames) {
-                const formElement = form.elements.namedItem(name);
+            // @ts-ignore: It has an iterator; it works in Firefox, Chrome, Safari
+            for (const formElement of form.elements) {
+                // In Chrome and Safari, the radio node lists can be found directly in the form elements
                 if (formElement instanceof RadioNodeList) {
                     if (!radioNodeLists.includes(formElement)) {
                         radioNodeLists.push(formElement);
+                    }
+                }
+
+                // Alternative way to get the radio node lists for Firefox.
+                if (formElement instanceof HTMLFormElement && formElement.type === 'radio') {
+                    const radioNodeList = form.elements[formElement.name];
+                    if (radioNodeList instanceof RadioNodeList) {
+                        if (!radioNodeLists.includes(radioNodeList)) {
+                            radioNodeLists.push(radioNodeList);
+                        }
                     }
                 }
 
