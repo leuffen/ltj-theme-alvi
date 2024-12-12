@@ -19,7 +19,7 @@ Joda.registerTemplate(
         onAfterConnectedCallback: (element: HTMLElement) => {
             const paragraph = element.querySelector("p");
             if (paragraph) {
-                paragraph.innerText = paragraph.innerText.replace('{year}', new Date().getFullYear().toString());
+                paragraph.innerHTML = paragraph.innerHTML.replace('{year}', new Date().getFullYear().toString());
             }
         }
     }

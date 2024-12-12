@@ -1,18 +1,46 @@
 .tjs-cards {
     padding: 4rem 0;
-    background-color: var(--layout-bg, var(--alvi-white));
+
+
+
+    --background: var(--alvi-white);
+    --border: 1px solid var(--alvi-background-grey-dark);
+
+
+
+    &.dark {
+        --background: var(--alvi-background-grey);
+        --border: 0;
+    }
+    background-color: var(--background);
 }
 
 .tjs-card {
+
+
+    --background: var(--alvi-white);
+    margin-bottom: 15px;
     &:first-child {
         .tjs-card__content {
             border-bottom-color: var(--alvi-primary);
         }
     }
 
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        .tjs-card__content {
+            border-color: var(--alvi-primary);
+
+        }
+    }
+
+
     &__content {
         height: 100%;
         margin: .5rem;
+
+        border: var(--border);
         border-bottom: 5px solid var(--alvi-background-grey-dark);
         background-color: var(--alvi-white);
 

@@ -28,7 +28,8 @@
         "@leuffen/liscom": "^2.0.10",
         "@leuffen/liscom-loader": "^1.0.6",
         "@leuffen/liweco-base": "^2.0.2",
-        "@micx/lib-js": "^1.0.23"
+        "@micx/lib-js": "^1.0.24",
+        "@nextrap/alpha-pack": "^1.0.0"
     },
     "devDependencies": {
         "@kasimirjs/kit-bootstrap": "^1.0.4",

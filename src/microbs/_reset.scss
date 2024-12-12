@@ -1,10 +1,15 @@
+
+
 *,
 *::before,
 *::after {
     box-sizing: border-box; // Ensures consistent box model
+    /**
     margin: 0; // Removes default margins
     padding: 0; // Removes default paddings
     border: 0; // Removes default borders
+
+     */
 }
 
 html {
