@@ -8,3 +8,8 @@
 @import "components/all";
 
 @import "@leuffen/jodastyle";
+@import "@leuffen/liscom";
+
+h3, .section-h2 {
+    scroll-margin-top: 100px;
+}

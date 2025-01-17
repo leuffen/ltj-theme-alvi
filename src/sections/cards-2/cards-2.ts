@@ -7,7 +7,7 @@ Joda.registerTemplate("cards-2",
             <div class="gradient [[layout.gradient ? '' : 'd-none']]"></div>
             <div class="container">
                 <div class="row">
-                    <slot data-select=".children > *" data-child-class="tjs-card-2 :: col-12 :md: col-6"></slot>
+                    <slot data-select=".children > *" data-child-class=" tjs-card-2 :: col-12 :md: col-6"></slot>
                 </div>
             </div>
         </section>
